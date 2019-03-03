@@ -12,7 +12,6 @@
 <createdBy>Diana</createdBy>
 <createdTime>2019-03-03 00:12:24 UTC</createdTime>
 <ownerDesignName>modelo relacional</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -64,16 +63,18 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="NUM_TARJETA_CREDITO" id="7A22EB42-35CE-3A14-753A-6D0C2CDEA189">
-<createdBy>Diana</createdBy>
-<createdTime>2019-03-03 00:13:31 UTC</createdTime>
-<ownerDesignName>modelo relacional</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LogDes-1768A872-F385-FDBA-D95E-0CB63F5908E2@LOGDT10045</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 </columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E0A3F529-2BBB-CB0E-8D28-A2FCF916C8B3" name="TBL_PERSONA_PK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-03 00:16:08 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C243DD80-D300-F964-FE02-4C3256E00A86"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
 </Table>

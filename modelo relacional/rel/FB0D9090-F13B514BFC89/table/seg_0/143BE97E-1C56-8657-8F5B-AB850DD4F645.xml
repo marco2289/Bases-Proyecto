@@ -7,4 +7,64 @@
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_SUSRIPTOR" id="547D1B11-BDA1-85DE-97DE-334B12AC3A7F">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-03 00:19:47 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_PERSONA" id="BB6716A0-AE64-B871-7E91-DDBA49C288AF">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-03 00:18:47 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1078081-9934-7D32-ABCB-5F12558539AA" referredColumn="C243DD80-D300-F964-FE02-4C3256E00A86"/>
+</associations>
+</Column>
+<Column name="NUM_TARJETA_CREDITO" id="FF401A9C-7E5C-09B0-EA28-3401D98E262D">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-03 00:23:26 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="64501CEE-E23C-F8B2-BE49-93888281E242" name="TBL_SUBSCRICTOR_PK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-03 00:19:47 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="547D1B11-BDA1-85DE-97DE-334B12AC3A7F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="57E6BF3F-25BD-1D33-1530-1D8C1E2B7525" name="TBL_SUBSCRICTOR_TBL_PERSONA_FK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-03 00:18:47 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB6716A0-AE64-B871-7E91-DDBA49C288AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
 </Table>
