@@ -1,0 +1,5 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="B5CB4A42-BBE6-2B6A-60FA-FB79DA01F7B2" name="TBL_PERSONA" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="FB0D9090-78B4-9AC0-197C-F13B514BFC89" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="143BE97E-1C56-8657-8F5B-AB850DD4F645" name="TBL_SUBSCRICTOR" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="FB0D9090-78B4-9AC0-197C-F13B514BFC89" propertySourceId="" propertyTargetId=""/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="0C5DF87A-52B4-B7EC-2A51-E5A494801289" mainViewID="6376EB3F-E0ED-21F6-6883-2D7E5FF6159F">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-03 00:09:02 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>
