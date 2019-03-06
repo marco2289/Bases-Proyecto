@@ -22,7 +22,6 @@
 <createdBy>Diana</createdBy>
 <createdTime>2019-03-03 00:12:11 UTC</createdTime>
 <ownerDesignName>modelo relacional</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -57,6 +56,16 @@
 <createdTime>2019-03-03 00:13:05 UTC</createdTime>
 <ownerDesignName>modelo relacional</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID" id="662A4E91-590B-B988-BCBA-847D98DFBE8A">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-06 04:11:21 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
