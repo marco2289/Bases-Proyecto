@@ -98,18 +98,20 @@
     padding: 24px 24px 0;
 }
 
+.heading-1 {
+  font-size: 28px; 
+  letter-spacing: .25px;
+  margin-bottom: 6px; 
+  margin-top:30px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+h1 {
+  font-size: 100%;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+}
 
 
 
