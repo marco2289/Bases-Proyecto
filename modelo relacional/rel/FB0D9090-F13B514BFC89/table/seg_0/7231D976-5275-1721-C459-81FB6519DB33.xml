@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7231D976-5275-1721-C459-81FB6519DB33" name="TBL_ALBUM">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-06 04:04:45 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_ALBUM" id="E904ECCE-0CF0-6D05-0277-A38F1F4E6F6E">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-06 04:05:12 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="A7D6D90D-F2E3-A688-18BD-ED7501B81235">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-06 04:05:46 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ANIO_LANSAMIENTO" id="0BD64B65-062C-DAA2-D4ED-96FBA2799325">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-06 04:06:02 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_ARTISTA" id="1EDE26BC-11AB-AA93-FEAF-84BDA3324F4C">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-06 04:06:30 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="64E033C9-9373-D21C-264E-24FA011C7BE4" referredColumn="44F3A5D6-964E-9D7D-00DB-187E056D04A9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="547C5943-0986-A347-4B08-6F6E208D0E07" name="TBL_ALBUM_PK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-06 04:05:12 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E904ECCE-0CF0-6D05-0277-A38F1F4E6F6E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CB71DAE2-1544-187D-29DB-89312150D2BD" name="TBL_ALBUM_TBL_ARTISTA_FK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-06 04:06:29 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1EDE26BC-11AB-AA93-FEAF-84BDA3324F4C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

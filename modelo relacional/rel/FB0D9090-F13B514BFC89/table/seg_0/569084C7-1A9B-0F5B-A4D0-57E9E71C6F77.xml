@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="569084C7-1A9B-0F5B-A4D0-57E9E71C6F77" name="TBL_ARTISTA">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-03 22:10:27 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_ARTISTA" id="44F3A5D6-964E-9D7D-00DB-187E056D04A9">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-03 22:11:19 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_ARTISTICO" id="CF667827-C597-F795-C4DE-09CBEE6F82DB">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-03 22:12:22 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_PERSONA" id="015DC4C2-7370-F941-E929-BC89170159F5">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-03 22:15:38 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C2FCECF0-82F5-992C-4A94-0148C958AADD" referredColumn="C243DD80-D300-F964-FE02-4C3256E00A86"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4E91C05B-F766-B29F-BDEB-9E83E9ADD7E9" name="TBL_ARTISTA_PK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-03 22:11:19 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="44F3A5D6-964E-9D7D-00DB-187E056D04A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="311EA4F5-8CBB-D21C-18B8-47C1B3951CE4" name="TBL_ARTISTA_TBL_PERSONA_FK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-03 22:15:38 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="015DC4C2-7370-F941-E929-BC89170159F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
