@@ -57,11 +57,7 @@
 	font-weight: bold;
 
 }
-.img-responsive{
-    display: block;
-    max-width: 150%;
-    height: auto;
-}
+
 
 a:hover{
 	text-decoration: none;
