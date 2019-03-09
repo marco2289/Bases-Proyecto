@@ -157,3 +157,10 @@ h1 {
 .player .player-change .glyphicon{
   font-size: 24pt;
 }
+.placeholders-img {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  height: 56px;
+  margin: 20px auto;
+  width: 56px;
+}
