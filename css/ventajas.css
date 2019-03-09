@@ -63,6 +63,11 @@ a:hover{
 	text-decoration: none;
 	color: white;
 }
+.img-responsives{
+    display: block;
+    max-width: 150%;
+    height: auto;
+}
 
 .cuadro {
     padding: 100px 100px 10px 100px;
