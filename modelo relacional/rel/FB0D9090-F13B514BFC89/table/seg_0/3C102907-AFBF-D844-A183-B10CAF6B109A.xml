@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3C102907-AFBF-D844-A183-B10CAF6B109A" name="TBL_RED_SOCIAL">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-11 00:00:56 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_RED" id="BE801718-3EF3-59DA-6E2A-D727E6FBF10B">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-11 00:01:28 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_RED" id="A11D426F-9616-E4F2-C863-EBBC9699DF9D">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-11 00:01:40 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="63F43D87-ED81-3A54-369E-F733BE6EEB14" name="TBL_RED_SOCIAL_PK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-11 00:01:28 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE801718-3EF3-59DA-6E2A-D727E6FBF10B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

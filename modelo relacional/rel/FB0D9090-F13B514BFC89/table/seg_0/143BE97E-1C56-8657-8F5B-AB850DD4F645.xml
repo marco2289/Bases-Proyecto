@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="143BE97E-1C56-8657-8F5B-AB850DD4F645" name="TBL_SUBSCRICTOR">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="143BE97E-1C56-8657-8F5B-AB850DD4F645" name="TBL_USUARIO">
 <createdBy>Diana</createdBy>
 <createdTime>2019-03-03 00:09:59 UTC</createdTime>
 <ownerDesignName>modelo relacional</ownerDesignName>
@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="CODIGO_SUSRIPTOR" id="547D1B11-BDA1-85DE-97DE-334B12AC3A7F">
+<Column name="CODIGO_USUARIO" id="547D1B11-BDA1-85DE-97DE-334B12AC3A7F">
 <createdBy>Diana</createdBy>
 <createdTime>2019-03-03 00:19:47 UTC</createdTime>
 <ownerDesignName>modelo relacional</ownerDesignName>
@@ -43,6 +43,53 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="CONTRASENIA" id="B5FE72E8-01E4-5860-F92E-FE16674CE593">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-10 23:57:17 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_INSCRIPSCION" id="9E65B4F9-B103-A8AA-3D78-DDFA185135E2">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-10 23:57:42 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FOTO" id="24B8AD4D-56D0-B0D3-85CB-F0F96271730F">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-10 23:58:15 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-7DD553FD-11E8-61FA-399D-2E531FB621D0@LOGDT10034</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TBL_RED" id="FD7ECFD8-950C-FABC-BED5-418D67DEFDE8">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-11 00:02:23 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F023B479-E6B7-51E9-257C-97AA21DB5661" referredColumn="BE801718-3EF3-59DA-6E2A-D727E6FBF10B"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="64501CEE-E23C-F8B2-BE49-93888281E242" name="TBL_SUBSCRICTOR_PK">
@@ -56,6 +103,16 @@
 <colUsage columnID="547D1B11-BDA1-85DE-97DE-334B12AC3A7F"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="87FD0092-1100-8CB8-2501-30B1F9D99EED" name="TBL_USUARIO__IDXv1">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-11 00:21:36 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB6716A0-AE64-B871-7E91-DDBA49C288AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="57E6BF3F-25BD-1D33-1530-1D8C1E2B7525" name="TBL_SUBSCRICTOR_TBL_PERSONA_FK">
 <createdBy>Diana</createdBy>
 <createdTime>2019-03-03 00:18:47 UTC</createdTime>
@@ -64,6 +121,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="BB6716A0-AE64-B871-7E91-DDBA49C288AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8227D75B-A5A7-C077-C544-F0B54A7A9D67" name="TBL_USUARIO_TBL_RED_SOCIAL_FK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-11 00:02:23 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD7ECFD8-950C-FABC-BED5-418D67DEFDE8"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

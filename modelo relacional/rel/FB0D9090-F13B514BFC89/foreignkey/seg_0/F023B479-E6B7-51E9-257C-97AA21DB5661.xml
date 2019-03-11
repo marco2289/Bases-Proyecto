@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F023B479-E6B7-51E9-257C-97AA21DB5661" containerWithKeyObject="143BE97E-1C56-8657-8F5B-AB850DD4F645" localFKIndex="8227D75B-A5A7-C077-C544-F0B54A7A9D67" name="TBL_USUARIO_TBL_RED_SOCIAL_FK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-11 00:02:23 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<referredTableLongName>TBL_RED_SOCIAL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3C102907-AFBF-D844-A183-B10CAF6B109A</referredTableID>
+<keyObject>63F43D87-ED81-3A54-369E-F733BE6EEB14</keyObject>
+<referredKeyID>63F43D87-ED81-3A54-369E-F733BE6EEB14</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CODIGO_RED</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

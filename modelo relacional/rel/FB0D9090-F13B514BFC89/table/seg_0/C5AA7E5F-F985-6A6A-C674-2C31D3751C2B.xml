@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C5AA7E5F-F985-6A6A-C674-2C31D3751C2B" name="TBL_CUENTAS_GRATIS">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-11 00:11:09 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_CUENTA" id="3A8A8F11-DB22-9025-FE4D-70363A677067">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-11 00:11:37 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_USUARIO" id="648DD4BA-8475-8410-F1DF-E90E00918742">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-11 00:11:49 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E72A1147-2688-7D5D-DD5B-ABF778EFA595" referredColumn="547D1B11-BDA1-85DE-97DE-334B12AC3A7F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5C6B4449-9757-71E6-399F-0D93C6523E89" name="TBL_CUENTAS_GRATIS_PK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-11 00:11:37 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A8A8F11-DB22-9025-FE4D-70363A677067"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="26B744B1-3A5D-5128-32A1-21A515C01D35" name="TBL_CUENTAS_GRATIS__IDX">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-11 00:12:23 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="648DD4BA-8475-8410-F1DF-E90E00918742"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3C73245-6F50-9AB4-1077-477876FDE5D4" name="TBL_CUENTAS_GRATIS_TBL_USUARIO_FK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-11 00:11:49 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="648DD4BA-8475-8410-F1DF-E90E00918742"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

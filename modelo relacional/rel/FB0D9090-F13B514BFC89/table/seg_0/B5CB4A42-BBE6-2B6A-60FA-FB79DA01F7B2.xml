@@ -18,6 +18,20 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="CODIGO_GENERO" id="CE859711-5BED-C672-ECBC-B786DE765EA5">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-11 00:24:05 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FCCDE653-81DD-2CC4-9E33-2185200E251A" referredColumn="72F4E131-1A67-20C4-0759-5ABB933A506D"/>
+</associations>
+</Column>
 <Column name="NOMBRE" id="EB31C1D3-E28E-E7E7-C331-84961CC1394B">
 <createdBy>Diana</createdBy>
 <createdTime>2019-03-03 00:12:11 UTC</createdTime>
@@ -83,6 +97,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="C243DD80-D300-F964-FE02-4C3256E00A86"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DD24E45A-5C6D-1317-78A8-DB1B6D69AC36" name="TBL_PERSONA_TBL_GENEROS_FK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-11 00:24:05 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE859711-5BED-C672-ECBC-B786DE765EA5"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
