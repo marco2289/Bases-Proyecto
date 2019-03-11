@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="764498C7-EA55-B25B-94D3-E238A57DC4B8" name="TBL_FAVORITAS">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-11 00:26:51 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_CANCION" id="7E694F42-EDDC-DF64-B9C2-4A53C4705421">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-11 00:27:55 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_USUARIO" id="DFA699FE-7B64-D5BC-3534-C9EFAC2D3D45">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-11 00:28:00 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8A205913-1968-B35A-B0F5-06ACBD3C67BF" referredColumn="547D1B11-BDA1-85DE-97DE-334B12AC3A7F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7679A69C-6DBC-6B52-6D8B-8D886D7C8CB6" name="TBL_FAVORITAS_PK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-11 00:28:09 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFA699FE-7B64-D5BC-3534-C9EFAC2D3D45"/>
+<colUsage columnID="7E694F42-EDDC-DF64-B9C2-4A53C4705421"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="169765CD-1C90-25E3-744D-1DEDB1FF2104" name="TBL_FAVORITAS_TBL_USUARIO_FK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-11 00:28:00 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFA699FE-7B64-D5BC-3534-C9EFAC2D3D45"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

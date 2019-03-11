@@ -76,7 +76,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TBL_RED" id="FD7ECFD8-950C-FABC-BED5-418D67DEFDE8">
+<Column name="CODIGO_RED" id="FD7ECFD8-950C-FABC-BED5-418D67DEFDE8">
 <createdBy>Diana</createdBy>
 <createdTime>2019-03-11 00:02:23 UTC</createdTime>
 <ownerDesignName>modelo relacional</ownerDesignName>
