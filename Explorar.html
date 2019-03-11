@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Explorar</title>
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/principal.css">
+   <link rel="stylesheet" href="css/favorites.css">
+   <link rel="stylesheet" href="css/player.css">
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        
+        <!-- Barra de Navegacion Lateral -->
+        <div id="sidebar" class="col-sm-3 col-md-3 col-lg-2 sidebar">
+          <div>  <img id="img_dee" src="img/inicio/deezer4.png"  class="img-responsive" alt=""></div>
+          <div class="form-group has-feedback">
+            <div class="conversion-banner">
+              <p class="conversion-banner-description">Utilizas la versión gratuita. Suscríbete y sáltate gratis los anuncios durante 30 días.</p>
+              <a class="c011 c0121 c0125" role="button" href="#" target="_blank">
+                <span class="c012">SUSCRIBIRSE</span></a>
+              </div>
+          </div>
+          <ul class="nav nav-sidebar" aria-hidden="true">
+            <li ><a href="#">INICIO</a></li> 
+            <li>
+                <a href="#">Explorar</a>
+              </li>
+            <li>
+              <a href="#">RECOMENDACIONES</a>
+            </li>
+            <hr>
+            <li>
+              <a>
+              <span style="font-size: 14px">Mi Música</span>
+                </span>
+               
+              </a>
+            </li>
+              
+            <li>
+              <a href="#">
+                  <span class="glyphicon glyphicon-heart"></span> 
+                  &nbsp;&nbsp;&nbsp; Mis favoritas
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <span class="glyphicon glyphicon-list"></span> 
+                  &nbsp;&nbsp;&nbsp; Playlists
+                </a>
+            </li> 
+              <li>
+              <a href="#">
+                  <span class="glyphicon glyphicon-cd"></span> 
+                  &nbsp;&nbsp;&nbsp; Álbumes
+                </a>
+              </li>
+              
+              <li>
+                <a href="#">
+                    <span class="glyphicon glyphicon-expand"></span> 
+                    &nbsp;&nbsp;&nbsp; Aplicaciones
+                  </a>
+              </li>
+          </ul>
+
+          
+        </div>
+        <!-- Fin Barra de Navegacion Lateral -->
+
+      <div class="page-topbar" id="page_topbar">
+        <div class="popper-wrapper">
+         <input type="text" name="search" class="topbar-search-input" placeholder="Buscar">
+          
+              </div>
+            </div>
+
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-cd"></span> 
+                        &nbsp;&nbsp;&nbsp; Álbumes
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="#">
+                          <span class="glyphicon glyphicon-expand"></span> 
+                          &nbsp;&nbsp;&nbsp; Aplicaciones
+                        </a>
+                    </li>
+                    
+
+            </ul>
+
+
+
+        <!-- FIN Floatbar -->
+        <div id="float-bar-overlay" class="float-bar-overlay" onclick="floatBar.hidePanel();listaBar.hidePanel()"></div>
+         
+
+        <div class="col-sm-offset-3 col-md-offset-3 col-lg-offset-2 col-sm-3 col-md-3 col-lg-3 float-bar" id="list-bar">
+          <div class="container-fluid">
+            <div class="header">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <h4>Cola</h4>
+                      <h5 id="total-cancion">20 canciones · 01:30:25</h5>
+                      <p><label><input type="checkbox" name="reco-autom"> Recomendaciones automáticas</label></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="list-body">
+              <ul class="list-items section">
+                <li>
+                    <div class="row">
+                      <div class="col-sm-2 cover"><img src="img/cover/x.jpg" alt="cover" class="img-rounded img-responsive"></div>
+                      <div class="col-sm-8">
+                        <p>Photograph</p>
+                      </div>
+                      <div class="col-sm-2">
+                        <button type="button" class="btn btn-none">
+                          <span class="glyphicon glyphicon-heart"></span>
+                        </button>
+                      </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                      <div class="col-sm-2 cover"><img src="img/cover/x.jpg" alt="cover" class="img-rounded img-responsive"></div>
+                      <div class="col-sm-8">
+                        <p>Photograph</p>
+                      </div>
+                      <div class="col-sm-2">
+                        <button type="button" class="btn btn-none">
+                          <span class="glyphicon glyphicon-heart"></span>
+                        </button>
+                      </div>
+                    </div>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contenido Principal -->
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-3 col-lg-offset-2 main">
+          <div class="container-fluid">
+            <!--Playlist-->
+            <h1 class="heading-1">Todos los canales</h1>
+
+
+           
+      </div> 
+    </div> <!-- FIN container -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    
+        <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
