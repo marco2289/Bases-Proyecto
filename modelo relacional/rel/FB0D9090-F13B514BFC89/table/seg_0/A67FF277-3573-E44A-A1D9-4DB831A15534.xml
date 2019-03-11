@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A67FF277-3573-E44A-A1D9-4DB831A15534" name="GENEROS_X_CANCION">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-11 01:02:49 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_GENERO" id="A1428739-EDAB-1DB8-C37A-7D8EE05579C4">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-11 01:05:29 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4B72AA78-C2C8-2632-875E-B7BB68389614" referredColumn="A903E5FD-F33D-F762-DC8D-9B1CE28E7A45"/>
+</associations>
+</Column>
+<Column name="CODIGO_CANCION" id="A7B83CE2-0005-0693-01A0-5DD373A641FA">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-11 01:05:45 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="000A3884-D4F0-22AA-2D12-E4C208F45E8F" referredColumn="E8AE337C-FF7B-A943-12AA-3FBE4E4A8AB8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="167B129F-B463-0160-221A-2FA6D0E901BF" name="GENEROS_X_CANCION_PK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-11 01:05:39 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A1428739-EDAB-1DB8-C37A-7D8EE05579C4"/>
+<colUsage columnID="A7B83CE2-0005-0693-01A0-5DD373A641FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BA2A61D4-B3EF-B32C-F69A-7FF6FC2FB8C9" name="GENEROS_X_CANCION_TBL_GENEROSv2_FK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-11 01:05:29 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A1428739-EDAB-1DB8-C37A-7D8EE05579C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8C4EF467-2923-8286-1CAA-1D2A2672025B" name="GENEROS_X_CANCION_TBL_CANCIONES_FK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-11 01:05:45 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A7B83CE2-0005-0693-01A0-5DD373A641FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
