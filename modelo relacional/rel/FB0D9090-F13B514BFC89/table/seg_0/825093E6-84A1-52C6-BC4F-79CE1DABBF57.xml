@@ -31,7 +31,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="D3ADC042-1270-C2EB-C73C-9E49233788D6" name="TBL_GENEROS_PK">
+<ind_PK_UK id="D3ADC042-1270-C2EB-C73C-9E49233788D6" name="TBL_GENEROS_PKv1">
 <createdBy>Diana</createdBy>
 <createdTime>2019-03-11 00:23:12 UTC</createdTime>
 <ownerDesignName>modelo relacional</ownerDesignName>
