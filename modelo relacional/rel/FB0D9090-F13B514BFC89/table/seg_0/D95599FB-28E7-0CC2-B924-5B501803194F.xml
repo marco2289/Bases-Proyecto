@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D95599FB-28E7-0CC2-B924-5B501803194F" name="TBL_EMPLEADOS">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-21 02:41:49 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_EMPLEADO" id="AE6D5DD0-BEB2-DD21-846C-158B2D0D27F2">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-21 02:42:01 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="12575ACF-F321-A2E9-9731-04D59A3CF40D" referredColumn="C243DD80-D300-F964-FE02-4C3256E00A86"/>
+</associations>
+</Column>
+<Column name="CODIGO_EMPLEADO_MAESTRO" id="82B802C3-0670-E8B3-7AF7-BA5CC43FB4E3">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-21 02:44:47 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7E5F444B-09DC-DC96-C88D-B364E9479845" referredColumn="AE6D5DD0-BEB2-DD21-846C-158B2D0D27F2"/>
+</associations>
+</Column>
+<Column name="SUELDO" id="792EBF8F-8B57-D370-B730-0FE669997E59">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-21 02:45:26 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CORREO" id="215B2007-FBEB-5048-C425-AE2F90815301">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-21 02:45:34 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID" id="327BDF7E-2D9C-07F0-3782-2B11C05B7204">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-21 02:45:41 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELEFONO" id="246F9E86-C3A9-7E99-EE72-77E55B047080">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-21 02:45:55 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CEDDE96F-E418-376E-5AD3-196068CF02A8" name="TBL_EMPLEADOS_PK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-21 02:42:17 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE6D5DD0-BEB2-DD21-846C-158B2D0D27F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9A5EB2AC-E9A2-7724-53E1-929F87CD0EB1" name="TBL_EMPLEADOS_TBL_PERSONA_FK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-21 02:42:01 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE6D5DD0-BEB2-DD21-846C-158B2D0D27F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="117BCA55-D178-8B66-1BC0-179C98B542B0" name="TBL_EMPLEADOS_TBL_EMPLEADOS_FK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-21 02:44:47 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82B802C3-0670-E8B3-7AF7-BA5CC43FB4E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
