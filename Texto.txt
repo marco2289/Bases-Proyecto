@@ -1,0 +1,15 @@
+personas
+    Alumnos
+    Docencia    
+        Catedraticos        
+        Jefes de departamento
+        Coordinadores
+    Administrador
+
+Facultades    t
+Centros Regionales    
+Edificios
+Aulas
+
+Matriculas
+Historial
