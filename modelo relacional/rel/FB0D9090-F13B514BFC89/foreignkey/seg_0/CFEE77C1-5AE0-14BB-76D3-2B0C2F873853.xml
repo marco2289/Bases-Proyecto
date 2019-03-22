@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CFEE77C1-5AE0-14BB-76D3-2B0C2F873853" containerWithKeyObject="70EB614E-91D9-7A4F-D326-F8631DD9EA08" localFKIndex="5825D8F1-7279-7A27-3E95-B10B675BFD11" name="TBL_CANCIONES_X_ARTISTA_TBL_ARTISTA_FK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-22 03:10:12 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<referredTableLongName>TBL_ARTISTA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>569084C7-1A9B-0F5B-A4D0-57E9E71C6F77</referredTableID>
+<keyObject>4E91C05B-F766-B29F-BDEB-9E83E9ADD7E9</keyObject>
+<referredKeyID>4E91C05B-F766-B29F-BDEB-9E83E9ADD7E9</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CODIGO_ARTISTA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

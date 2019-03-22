@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="70EB614E-91D9-7A4F-D326-F8631DD9EA08" name="TBL_CANCIONES_X_ARTISTA">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-22 03:04:29 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<ordsAlias>table_21</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_CANCION" id="161E65F0-DAD7-289D-FC81-DC0AAEAB502B">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-22 03:09:18 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F1D0851C-47C4-F358-488F-4ED340F874B7" referredColumn="E8AE337C-FF7B-A943-12AA-3FBE4E4A8AB8"/>
+</associations>
+</Column>
+<Column name="CODIGO_ARTISTA" id="1AE14B2C-29D4-FF66-F04A-9C8FFBB87DD5">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-22 03:10:12 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CFEE77C1-5AE0-14BB-76D3-2B0C2F873853" referredColumn="44F3A5D6-964E-9D7D-00DB-187E056D04A9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B1CDE374-CD67-AF63-70AD-0B7541498346" name="TBL_CANCIONES_X_ARTISTA_PK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-22 03:09:31 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="161E65F0-DAD7-289D-FC81-DC0AAEAB502B"/>
+<colUsage columnID="1AE14B2C-29D4-FF66-F04A-9C8FFBB87DD5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2000B5C2-3B1C-D887-2274-032F2FA5BA3E" name="TBL_CANCIONES_X_ARTISTA_TBL_CANCIONES_FK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-22 03:09:18 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="161E65F0-DAD7-289D-FC81-DC0AAEAB502B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5825D8F1-7279-7A27-3E95-B10B675BFD11" name="TBL_CANCIONES_X_ARTISTA_TBL_ARTISTA_FK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-22 03:10:12 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1AE14B2C-29D4-FF66-F04A-9C8FFBB87DD5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
