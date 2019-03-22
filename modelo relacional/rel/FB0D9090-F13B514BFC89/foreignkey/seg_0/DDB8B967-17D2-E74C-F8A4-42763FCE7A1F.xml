@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DDB8B967-17D2-E74C-F8A4-42763FCE7A1F" containerWithKeyObject="D95599FB-28E7-0CC2-B924-5B501803194F" localFKIndex="9FE3D1A9-340E-640A-C975-626DC18BDF86" name="TBL_EMPLEADOS_TBL_DEPARTAMENTOS_FKv2">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-22 01:49:28 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<referredTableLongName>TBL_DEPARTAMENTOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DAA5D21B-6CC6-C82E-7D9B-1CF21D8436F1</referredTableID>
+<keyObject>6EF32FE9-8E8A-2906-9EBD-2E0028B99EE2</keyObject>
+<referredKeyID>6EF32FE9-8E8A-2906-9EBD-2E0028B99EE2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>COIGO_DEPARTAMENTO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

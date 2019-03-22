@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DAA5D21B-6CC6-C82E-7D9B-1CF21D8436F1" name="TBL_DEPARTAMENTOS">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-22 01:46:58 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COIGO_DEPARTAMENTO" id="375E4FF9-94FB-BB5D-BDF4-4F10F1219210">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-22 01:47:30 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_DEPARTAMENTO" id="7210F278-69AE-227C-44D9-17A5EF496288">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-22 01:47:48 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="BA38D062-9562-807A-766E-0884EF1FB115">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-22 01:47:58 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_EMPLEADO" id="288BB708-AEB4-3364-663C-287501FB81FC">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-22 01:49:44 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="69F25A2B-3682-9CE0-6C74-B87C02B0EF55" referredColumn="AE6D5DD0-BEB2-DD21-846C-158B2D0D27F2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6EF32FE9-8E8A-2906-9EBD-2E0028B99EE2" name="TBL_DEPARTAMENTOS_PK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-22 01:47:30 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="375E4FF9-94FB-BB5D-BDF4-4F10F1219210"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="77BE89CB-C77E-20DD-B5C9-8D3B16C6F24E" name="TBL_DEPARTAMENTOS_TBL_EMPLEADOS_FK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-22 01:49:44 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="288BB708-AEB4-3364-663C-287501FB81FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

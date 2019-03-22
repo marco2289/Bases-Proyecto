@@ -37,6 +37,20 @@
 <colAssociation fkAssociation="7E5F444B-09DC-DC96-C88D-B364E9479845" referredColumn="AE6D5DD0-BEB2-DD21-846C-158B2D0D27F2"/>
 </associations>
 </Column>
+<Column name="CODIGO_DEPARTAMENTO" id="07A89BF1-5AA4-9ED6-FAD8-C05A72CC2E88">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-22 01:49:28 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DDB8B967-17D2-E74C-F8A4-42763FCE7A1F" referredColumn="375E4FF9-94FB-BB5D-BDF4-4F10F1219210"/>
+</associations>
+</Column>
 <Column name="SUELDO" id="792EBF8F-8B57-D370-B730-0FE669997E59">
 <createdBy>Diana</createdBy>
 <createdTime>2019-03-21 02:45:26 UTC</createdTime>
@@ -112,6 +126,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="82B802C3-0670-E8B3-7AF7-BA5CC43FB4E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9FE3D1A9-340E-640A-C975-626DC18BDF86" name="TBL_EMPLEADOS_TBL_DEPARTAMENTOS_FKv2">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-22 01:49:28 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="07A89BF1-5AA4-9ED6-FAD8-C05A72CC2E88"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
