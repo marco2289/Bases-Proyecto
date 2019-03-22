@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="35A0EAC2-357F-3BA5-4D72-003A617E014A" name="TBL_SEGUIDORES_ALBUM">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-22 02:05:27 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<ordsAlias>table_19</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_ALBUM" id="3D9D80B3-A8A0-2819-54B1-93948478A83F">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-22 02:06:10 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="19F14159-E540-5DEA-3961-38A85C360C8A" referredColumn="E904ECCE-0CF0-6D05-0277-A38F1F4E6F6E"/>
+</associations>
+</Column>
+<Column name="CODIGO_USUARIO" id="414E7B74-EF7E-92E5-4E63-70F98050EAEA">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-22 02:06:48 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2501858C-D2D1-2202-E8CD-5AB9905C396F" referredColumn="547D1B11-BDA1-85DE-97DE-334B12AC3A7F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9B6D9234-F015-4B8D-19E4-3F35A0CAF656" name="TBL_SEGUIDORES_ALBUM_PK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-22 02:06:22 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D9D80B3-A8A0-2819-54B1-93948478A83F"/>
+<colUsage columnID="414E7B74-EF7E-92E5-4E63-70F98050EAEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8DFC7DBC-6424-76C4-76B6-099D6D402FC9" name="TBL_SEGUIDORES_ALBUM_TBL_ALBUM_FK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-22 02:06:10 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D9D80B3-A8A0-2819-54B1-93948478A83F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="696EF1FA-B740-0C22-92B9-9EC8AFB03D33" name="TBL_SEGUIDORES_ALBUM_TBL_USUARIO_FK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-22 02:06:48 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="414E7B74-EF7E-92E5-4E63-70F98050EAEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

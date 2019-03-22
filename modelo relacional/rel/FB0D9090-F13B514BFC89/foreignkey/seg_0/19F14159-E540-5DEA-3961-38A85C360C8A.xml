@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="19F14159-E540-5DEA-3961-38A85C360C8A" containerWithKeyObject="35A0EAC2-357F-3BA5-4D72-003A617E014A" localFKIndex="8DFC7DBC-6424-76C4-76B6-099D6D402FC9" name="TBL_SEGUIDORES_ALBUM_TBL_ALBUM_FK">
+<createdBy>Diana</createdBy>
+<createdTime>2019-03-22 02:06:10 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<referredTableLongName>TBL_ALBUM</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7231D976-5275-1721-C459-81FB6519DB33</referredTableID>
+<keyObject>547C5943-0986-A347-4B08-6F6E208D0E07</keyObject>
+<referredKeyID>547C5943-0986-A347-4B08-6F6E208D0E07</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CODIGO_ALBUM</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
