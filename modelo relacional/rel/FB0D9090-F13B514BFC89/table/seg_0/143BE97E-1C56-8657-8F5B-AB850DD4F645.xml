@@ -90,6 +90,17 @@
 <colAssociation fkAssociation="F023B479-E6B7-51E9-257C-97AA21DB5661" referredColumn="BE801718-3EF3-59DA-6E2A-D727E6FBF10B"/>
 </associations>
 </Column>
+<Column name="TBL_RED_SOCIALv2_CODIGO_RED" id="CCBD811D-DF8C-90C6-76E7-CEAB0F27A1F8">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-03-29 03:16:53 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="64501CEE-E23C-F8B2-BE49-93888281E242" name="TBL_SUBSCRICTOR_PK">
