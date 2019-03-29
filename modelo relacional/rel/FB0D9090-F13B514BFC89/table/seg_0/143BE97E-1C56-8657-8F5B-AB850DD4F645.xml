@@ -90,9 +90,9 @@
 <colAssociation fkAssociation="F023B479-E6B7-51E9-257C-97AA21DB5661" referredColumn="BE801718-3EF3-59DA-6E2A-D727E6FBF10B"/>
 </associations>
 </Column>
-<Column name="TBL_RED_SOCIALv2_CODIGO_RED" id="CCBD811D-DF8C-90C6-76E7-CEAB0F27A1F8">
+<Column name="CODIGO_LUGAR" id="0155A1BF-28B8-88E1-CD64-0DDA070969C7">
 <createdBy>mm_19</createdBy>
-<createdTime>2019-03-29 03:16:53 UTC</createdTime>
+<createdTime>2019-03-29 03:51:25 UTC</createdTime>
 <ownerDesignName>modelo relacional</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -100,6 +100,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E5E6E771-4D19-ECC2-0A82-1C8478D09641" referredColumn="728141F5-BC3A-0CF4-21A1-0F28F3924CE9"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -142,6 +145,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="FD7ECFD8-950C-FABC-BED5-418D67DEFDE8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C9639A9D-AA8C-4071-8639-474673884BAC" name="TBL_USUARIO_TBL_LUGARES_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-03-29 03:51:25 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0155A1BF-28B8-88E1-CD64-0DDA070969C7"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
