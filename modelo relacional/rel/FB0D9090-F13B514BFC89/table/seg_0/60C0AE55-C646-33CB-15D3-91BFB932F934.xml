@@ -68,6 +68,20 @@
 <colAssociation fkAssociation="B559A511-518D-4BD9-677C-CD5147132BC9" referredColumn="689CB628-7775-543F-D3FD-5F428782C96A"/>
 </associations>
 </Column>
+<Column name="CODIGO_USUARIO" id="FF0FE6C1-24B1-D5A1-93CE-E2957EF81D5C">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-04-20 02:57:29 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="592DB7C2-0980-EE5B-115A-889186F66E9C" referredColumn="547D1B11-BDA1-85DE-97DE-334B12AC3A7F"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="50C21029-1DED-69CE-EACB-58DC050594FD" name="TBL_CUENTAS_PREMIUM_PK">
@@ -79,6 +93,27 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="EBDFC7BA-F35C-51D7-E641-32BEF6EC25A8"/>
+<colUsage columnID="FF0FE6C1-24B1-D5A1-93CE-E2957EF81D5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F5716669-B3FD-81C8-F485-EC42E13F6759" name="TBL_CUENTAS_PREMIUM__UN">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-04-20 02:59:10 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF0FE6C1-24B1-D5A1-93CE-E2957EF81D5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C249F3B9-73B0-37DE-E411-B0D815E16B86" name="TBL_CUENTAS_PREMIUM__UNv2">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-04-20 02:59:10 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF0FE6C1-24B1-D5A1-93CE-E2957EF81D5C"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="B19BCC8D-306E-790C-11D2-CAC260CEE2FD" name="TBL_CUENTAS_PREMIUM_TBL_TIPOS_CUENTAS_PREMIUM_FK">
@@ -99,6 +134,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="EEDF2A85-370F-C0DB-AC94-EBDAECC4D478"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="717BE1E8-23D6-CC85-70FC-2C95A997EC0A" name="TBL_CUENTAS_PREMIUM_TBL_USUARIO_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-04-20 02:57:29 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF0FE6C1-24B1-D5A1-93CE-E2957EF81D5C"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
