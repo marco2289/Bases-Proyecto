@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="60C0AE55-C646-33CB-15D3-91BFB932F934" name="TBL_CUENTAS_PREMIUM">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-04-20 02:38:43 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<ordsAlias>table_23</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_CUENTA" id="EBDFC7BA-F35C-51D7-E641-32BEF6EC25A8">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-04-20 02:41:50 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_INICIO" id="8DC0CDE3-046D-FFDF-43F2-1385B8652804">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-04-20 02:42:17 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_VENCIMIENTO" id="959437E3-E78B-3782-0CAF-41E45CDD4824">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-04-20 02:42:37 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="50C21029-1DED-69CE-EACB-58DC050594FD" name="TBL_CUENTAS_PREMIUM_PK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-04-20 02:41:50 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EBDFC7BA-F35C-51D7-E641-32BEF6EC25A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
