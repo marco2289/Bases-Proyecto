@@ -40,6 +40,34 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="CODIGO_TIPO_PREMIUM" id="53F93680-0700-E4A7-DCFB-331F9371C087">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-04-20 02:54:04 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6D38D898-F50F-AEBE-B5F0-C23C8F791E3A" referredColumn="9B2609A0-7CAA-0A9C-60EB-D937209D3DC1"/>
+</associations>
+</Column>
+<Column name="CODIGO_ESTADO_CUENTA" id="EEDF2A85-370F-C0DB-AC94-EBDAECC4D478">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-04-20 02:54:22 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B559A511-518D-4BD9-677C-CD5147132BC9" referredColumn="689CB628-7775-543F-D3FD-5F428782C96A"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="50C21029-1DED-69CE-EACB-58DC050594FD" name="TBL_CUENTAS_PREMIUM_PK">
@@ -51,6 +79,26 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="EBDFC7BA-F35C-51D7-E641-32BEF6EC25A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B19BCC8D-306E-790C-11D2-CAC260CEE2FD" name="TBL_CUENTAS_PREMIUM_TBL_TIPOS_CUENTAS_PREMIUM_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-04-20 02:54:04 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53F93680-0700-E4A7-DCFB-331F9371C087"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A66C50FC-6F9B-FB97-EE7E-5CD929E7871E" name="TBL_CUENTAS_PREMIUM_TBL_ESTADO_CUENTA_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-04-20 02:54:22 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EEDF2A85-370F-C0DB-AC94-EBDAECC4D478"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
