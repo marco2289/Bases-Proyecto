@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="60C0AE55-C646-33CB-15D3-91BFB932F934" name="TBL_CUENTAS_PREMIUM">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-04-20 02:38:43 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<ordsAlias>table_23</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_CUENTA" id="EBDFC7BA-F35C-51D7-E641-32BEF6EC25A8">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-04-20 02:41:50 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_INICIO" id="8DC0CDE3-046D-FFDF-43F2-1385B8652804">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-04-20 02:42:17 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_VENCIMIENTO" id="959437E3-E78B-3782-0CAF-41E45CDD4824">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-04-20 02:42:37 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_TIPO_PREMIUM" id="53F93680-0700-E4A7-DCFB-331F9371C087">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-04-20 02:54:04 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6D38D898-F50F-AEBE-B5F0-C23C8F791E3A" referredColumn="9B2609A0-7CAA-0A9C-60EB-D937209D3DC1"/>
+</associations>
+</Column>
+<Column name="CODIGO_ESTADO_CUENTA" id="EEDF2A85-370F-C0DB-AC94-EBDAECC4D478">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-04-20 02:54:22 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B559A511-518D-4BD9-677C-CD5147132BC9" referredColumn="689CB628-7775-543F-D3FD-5F428782C96A"/>
+</associations>
+</Column>
+<Column name="CODIGO_USUARIO" id="FF0FE6C1-24B1-D5A1-93CE-E2957EF81D5C">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-04-20 02:57:29 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="592DB7C2-0980-EE5B-115A-889186F66E9C" referredColumn="547D1B11-BDA1-85DE-97DE-334B12AC3A7F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="50C21029-1DED-69CE-EACB-58DC050594FD" name="TBL_CUENTAS_PREMIUM_PK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-04-20 02:41:50 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EBDFC7BA-F35C-51D7-E641-32BEF6EC25A8"/>
+<colUsage columnID="FF0FE6C1-24B1-D5A1-93CE-E2957EF81D5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F5716669-B3FD-81C8-F485-EC42E13F6759" name="TBL_CUENTAS_PREMIUM__UN">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-04-20 02:59:10 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF0FE6C1-24B1-D5A1-93CE-E2957EF81D5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C249F3B9-73B0-37DE-E411-B0D815E16B86" name="TBL_CUENTAS_PREMIUM__UNv2">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-04-20 02:59:10 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF0FE6C1-24B1-D5A1-93CE-E2957EF81D5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B19BCC8D-306E-790C-11D2-CAC260CEE2FD" name="TBL_CUENTAS_PREMIUM_TBL_TIPOS_CUENTAS_PREMIUM_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-04-20 02:54:04 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53F93680-0700-E4A7-DCFB-331F9371C087"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A66C50FC-6F9B-FB97-EE7E-5CD929E7871E" name="TBL_CUENTAS_PREMIUM_TBL_ESTADO_CUENTA_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-04-20 02:54:22 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EEDF2A85-370F-C0DB-AC94-EBDAECC4D478"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="717BE1E8-23D6-CC85-70FC-2C95A997EC0A" name="TBL_CUENTAS_PREMIUM_TBL_USUARIO_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-04-20 02:57:29 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF0FE6C1-24B1-D5A1-93CE-E2957EF81D5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
