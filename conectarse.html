@@ -42,61 +42,60 @@
 
       
       
-      <main role="main" class="container">
-        <div class="row">
-            
+  <main role="main" class="container">
+  <div class="row">
+        
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-none d-sm-block">
+
                 <br><br><br><br><br><br><br>
               <div class="unlogged-container">
         <div class="unlogged-container-inner">
             <div class="unlogged-form-container">
                 <h1 class="texto1">¿Qué quieres escuchar hoy?</h1>
 
-  <div class="boton-sociales">
-    <button  class="boton boton-rojo" type="button"><span id="Facebook" class="unlogged-btn-label">Facebook</span> </button>
-     <button class="boton boton-rojo2" type="button"><span class="Google" class="unlogged-btn-label">Google</span></button>
-    </div>
+    <div class="boton-sociales">
+      <button  type="summit" class="btn btn-default btn-primary" style="width: 150px; height: 40px;float: center"><span style="float: left"><img src="img/facebook.svg" width="27" height="22">Facebook</span> </button>
+      <button class="boton boton-rojo2" type="summit" ><span ><img src="img/googl.svg" width="30" height="20">Google</span></button>
+      </div>
 
-  <div class="login_form">
+   <div class="login_form">
+    <div>
     <form class="unlogged-form" data-type="form-page">
-        <div  class="unlogged-input-container">
-          <select class="selec">
-            <option value="-" >País</option>
-              <option value="1" > Honduras  </option>
-             <option value="2">Panama   </option>
-             <option value="3">costa rica   </option>
-             <option value="4">salvador   </option>
-                     
-                        </select>
-              </div>
+       
+           <div  class="unlogged-input-container">
+          <input id="nombreu" class="inp"  type="text"  id="nombreu" placeholder="Correo Electronico" >
+          </div>
 
-  <div >
-    <input class="tel" type="text" placeholder="telefono" ><br><br>
+          <div >
+          <input class="inp"  type="password" id="contrasena" placeholder="Contraseña" ><br><br>
+          </div>
+    </form>
     </div>
-
-   <button  onclick="location='#'" class="btn btn-success" type="button" style="color:rgb(255, 255, 255)">Conectarse</button>
+    
+          <div id="resultado">
+          </div>
+    <button  type="summit" id="btn-conectarse" class="btn btn-success"  style="color:rgb(255, 255, 255)">Conectarse</button>
   
-     </form>
+     
        </div>
          <div ><a href="#"><p class="Conectardi">Conectarse con la dirección de email</p></a></div>
                     
                 <div> <a  role="button"> <p class="recuperacion">¿Has olvidado tu contraseña?</p>
                   </a>
                   ¿Todavía no tienes una cuenta Deezer? <a  href="#">Registrarse</a></div>
-            </div>
+                </div>
+           </div>
+          </div>
         </div>
-    </div>
-           </div>
-           <div id="foto" class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="
-           padding-left: 210px ">
-             <img src="img/inicio/chica.png" >
-           </div>
-
-        </div> <!-- /. --->
+     <div id="foto" class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="
+                 padding-left: 280px ">
+                   <img src="img/inicio/chica.png" >
+        </div>
+      
+  </div> <!-- /. --->
+              
         
-
-        
-      </main>
+  </main>
 
 
       
@@ -161,13 +160,16 @@
     
         
   </section>
-    
+  <script type="text/javascript" src="js/jquery.min.js"></script>
 
-        <script src="js/jquery-3.3.1.min.js"></script>
-    
-        <script src="js/bootstrap.min.js"></script>
-      
-        <script src="js/login.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/login.min.js"></script>
+  <script src="js/login.js"></script>
+  <script type="text/javascript">
+    $(function () {
+$('[data-toggle="popover"]').popover();
+});
+  </script>
 </body>
 
 </html>
