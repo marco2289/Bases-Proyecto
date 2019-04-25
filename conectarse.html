@@ -6,6 +6,14 @@
     <title>Page Title</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/login.css" rel="stylesheet">
+    <style>
+      @media only screen and (max-width: 992px) {
+         
+          #foto{
+              display:none;/*Oculta imagen*/
+          }
+  }
+  </style>
 </head>
 <body>
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
@@ -25,7 +33,7 @@
                         <a id="ofertas" onclick="location='ofertas.html'" >Ofertas</a>
                     </li>
                   <li>
-                      <button onclick="location='registrar.html'" class="btn-registrar">  
+                      <button  onclick="window.open('registro.php','_self')" class="btn-registrar">  
                         Registrarse
                       </button>
                   </li>
@@ -88,7 +96,7 @@
           </div>
         </div>
      <div id="foto" class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="
-                 padding-left: 280px ">
+                 padding-left: 39% ">
                    <img src="img/inicio/chica.png" >
         </div>
       
@@ -103,8 +111,8 @@
       
         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12" id="prub">
         
-          <a href="#" style="color: #fff"><img id="foto2" src="img/inicio/deeze2.png" class="img-responsive" alt="" ></a>  <br>
-          <a href="#"> <img class="mb-4 rounded-circle" src="img/inicio/Facebok.png" style=" width: 14%"></a>
+          <a href="#" style="color: #fff"><img id="foto2" src="img/inicio/deeze2.png" class="img-responsive" alt="" ></a>  <br><br>
+          <a href="#"> <img class="mb-4 rounded-circle" src="img/face.png" style=" width: 14%"></a>
           <a href="#"> <img class="mb-4 rounded-circle" src="img/inicio/twi.png" style=" width: 14%">         </a>
           <a href="#"><img class="mb-4 rounded-circle" src="img/inicio/you.png" style=" width: 14%">    </a>
           <a href="#"><img class="mb-4 rounded-circle" src="img/inicio/inst.png" style=" width: 14%">    </a><br><br><br><br>
@@ -123,9 +131,6 @@
         <a href="#" style="color: #fff">Dispositivos</a><br>
         <a href="#" style="color: #fff">Blog</a><br>
         <a href="#" style="color: #fff">Ayuda</a>          <br>  
-          
-                      
-    
     </div>
 
     <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12" id="prub2">

@@ -16,7 +16,11 @@ body {
 }
 #foto {
   margin-top: 0%;
+   
 }
+
+
+
 #foto2 {
   height: 30px;
   width: 125px;
@@ -54,7 +58,7 @@ p1{
   background-color: #fff;
   border: 2px solid #fff;
   border-radius: 5px;
-  padding: 9px 0 9px 51px;
+  padding: 9px 0 9px 5px;
   text-align: left;
   width: 150px;
   margin-left: 30px;
@@ -94,7 +98,7 @@ p1{
 .sexo,.edad{
 
   font-size: 17px;
-  padding: 26px 0 10px 0;
+  padding: 5px 0 10px 0;
   margin: 6px;
   border: 0;
   text-align: center;
@@ -162,7 +166,7 @@ p1{
   margin-bottom: 5%
   
 }
-#prub1,#prub2,#prub3,#prub4{
+#prub4{
   margin-top: -20%;
   margin-bottom: 5%
 }
@@ -197,7 +201,18 @@ p1{
   
 }
 
+#foto2{
+  margin-left: 120px;
+}
 
+#prub1 {
+  margin-top: -150px;
+}
 
+#prub2 {
+  margin-top: -150px;
+}
 
-
+#prub3, #prub4{
+  margin-top: -150px;
+}
