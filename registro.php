@@ -6,6 +6,13 @@
     <title>Page Title</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/login.css" rel="stylesheet">
+    <style>
+    @media only screen and (max-width: 992px) {
+        #foto{
+            display:none;/*Oculta imagen*/
+        }
+    }
+</style>  
 </head>
 <body>
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
@@ -30,7 +37,7 @@
                       </button>
                   </li>
                   <li>
-                        <button onclick="location='login.html'" class="btn-conectarse" >
+                        <button  onclick="window.open('conectarse.php','_self')" class="btn-conectarse" >
                           Conectarse
                        </button>
   
@@ -53,53 +60,60 @@
                 <h1 class="texto1">¿Qué quieres escuchar hoy?</h1>
 
   <div class="boton-sociales">
-    <button  class="boton boton-rojo" type="button"><span id="Facebook" class="unlogged-btn-label">Facebook</span> </button>
-     <button class="boton boton-rojo2" type="button"><span class="Google" class="unlogged-btn-label">Google</span></button>
-    </div>
+    <button  type="summit" class="btn btn-default btn-primary" style="width: 150px; height: 40px;float: center"><span style="float: left"><img src="img/facebook.svg" width="27" height="22">Facebook</span> </button>
+      <button class="boton boton-rojo2" type="summit" ><span ><img src="img/googl.svg" width="30" height="20">Google</span></button>
+      </div>
 
   <div class="login_form">
-    <form class="unlogged-form" data-type="form-page">
-        <div  class="unlogged-input-container">
-          <select class="selec">
-            <option value="-" >País</option>
-              <option value="1" > Honduras  </option>
-             <option value="2">Panama   </option>
-             <option value="3">costa rica   </option>
-             <option value="4">salvador   </option>
-                        </select>
-              </div>
+    <form class="unlogged-form" data-type="form-page">  
+     <div  >
+      <input type="email" id="txt-correo" class="inp"   placeholder="Correo Electronico" data-html="true"  data-toggle="popover" data-trigger="focus"  data-content="<h5 style='color:black'>Correo de la forma: Name@example.xxx</h5>" data-container="body" data-placement="right" >
+      </div>
 
-  <div >
-    <input class="tel" type="text" placeholder="telefono" ><br><br>
-    </div>
-
-    <div class="inform">
-        <select  class="sexo">
-            <option value="-">Genero</option> 
-           <option value="1" >Hombre</option>
-              <option value="2" >Mujer</option>
-               <option value="3">No comentar</option>
-          </select>
+     <div  >
+      <input type="password" id="txt-contrasena"   class="inp"  placeholder="Contraseña (6 caracteres mínimo)"  data-toggle="popover"  data-html="true" data-content="<h5 style='color:black'>-Usa [6-15] caracteres</h5>" data-placement="right" data-container="body" data-trigger="focus"  >
+      </div>
+      <div  >
+        <input  type="text" id="txt-nombreu" class="inp"  placeholder="Nombre de usuario" data-toggle="popover" data-html="true" data-trigger="focus"   data-content="<h5 style='color:black'>-Usa [2-12] caracteres <br> -Puedes usar solo letras,numeros ej: a89,tyg87,jkj</h5>" data-container="body" data-placement="right">
+        </div>
+       
+</form>
+    <div  class="inform" >
+        <select  id="slc-sexo" class="sexo">
+          <option value="">Sexo</option> 
+          <option value="1">Mujer</option>
+          <option value="2">Hombre</option>
+</select> 
+        
+          <select  class="edad" id="slc-edad" >
+            <option value="">Edad</option> 
+               <?php
+                   for ($i=1; $i <100 ; $i++) { 
+                     echo "<option value=".$i.">".$i."</option>";
+                   }
+               ?>
+          </select><br>
+        
           
-          <input  class="edad" type="number" placeholder="edad">
-    </div>
-          
-   <button  onclick="location='#'" class="btn btn-success" type="button" style="color:rgb(255, 255, 255)">Conectarse</button>
-  
-     </form>
+   <button  id="btn-registro" class="btn btn-success" type="submit" style="color:rgb(255, 255, 255)">Registrarse</button>
+   <div id="resultado">
+           
+           </div>
+ 
        </div>
-         <div ><a href="#"><p class="Conectardi">Conectarse con la dirección de email</p></a></div>
-                    
-                <div> <a  role="button"> <p class="recuperacion">¿Has olvidado tu contraseña?</p>
+        
+                <div> <a  role="button"> <p class="recuperacion">Al hacer clic en "Registrarse",</p>
                   </a>
-                  ¿Todavía no tienes una cuenta Deezer? <a  href="#">Registrarse</a></div>
+                  aceptas las Condiciones generales de uso.</div>
                 </div>
               </div>
           </div>
                  </div>
+                </div>
+
            <div class="container">
-            <div id="foto" class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"  style="
-            padding-left: 210px ">
+            <div id="foto" class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="
+                 padding-left: 39% ">
             <img  src="img/inicio/chico.png" >
           </div>
 
@@ -171,13 +185,20 @@
     
         
   </section>
-    
 
-        <script src="js/jquery-3.3.1.min.js"></script>
-    
-        <script src="js/bootstrap.min.js"></script>
-      
-        <script src="js/login.min.js"></script>
+ 
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/login.min.js"></script>
+  <script src="js/validarRegistro.js"></script>
+        <script type="text/javascript">
+          $(function () {
+    $('[data-toggle="popover"]').popover();
+      });
+        </script>
+
+        
 </body>
 
 </html>

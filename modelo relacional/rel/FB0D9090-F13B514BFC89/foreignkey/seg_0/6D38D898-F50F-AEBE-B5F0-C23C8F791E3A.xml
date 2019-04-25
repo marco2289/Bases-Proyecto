@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6D38D898-F50F-AEBE-B5F0-C23C8F791E3A" containerWithKeyObject="60C0AE55-C646-33CB-15D3-91BFB932F934" localFKIndex="B19BCC8D-306E-790C-11D2-CAC260CEE2FD" name="TBL_CUENTAS_PREMIUM_TBL_TIPOS_CUENTAS_PREMIUM_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-04-20 02:54:04 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<referredTableLongName>TBL_TIPOS_CUENTAS_PREMIUM</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>35E768AE-1A36-56FD-FC6B-EBD5504EB54B</referredTableID>
+<keyObject>77EEA40F-78FC-D5E6-B48B-7D8511E1514B</keyObject>
+<referredKeyID>77EEA40F-78FC-D5E6-B48B-7D8511E1514B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CODIGO_TIPO_PREMIUM</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
