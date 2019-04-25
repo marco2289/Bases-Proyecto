@@ -6,13 +6,21 @@
     <title>Page Title</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/login.css" rel="stylesheet">
+    <style>
+      @media only screen and (max-width: 992px) {
+         
+          #foto{
+              display:none;/*Oculta imagen*/
+          }
+  }
+  </style>
 </head>
 <body>
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
           <div class="container-fluid">
-              <!-- better mobile  display -->
+              <!--better mobile display -->
               <div class="navbar-header">
-                  <button style="background-color:#478baa" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <button style="background-color: #478baa" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                       <a class="sr-only">Toggle navigation</a><i class="glyphicon glyphicon-align-justify"></i>
                   </button>
                  <a  href="landingpage.html" class="navbar-brand" style="margin-bottom: 20px;"><img id="foto" src="img/inicio/deezer.png" class="img-responsive" alt="" width="150px"></a>
@@ -25,13 +33,13 @@
                         <a id="ofertas" onclick="location='ofertas.html'" >Ofertas</a>
                     </li>
                   <li>
-                      <button onclick="location='#'" class="btn-registrar">  
-                          Registrarse
+                      <button  onclick="window.open('registro.php','_self')" class="btn-registrar">  
+                        Registrarse
                       </button>
                   </li>
                   <li>
-                        <button onclick="location='login.html'" class="btn-conectarse" >
-                          Conectarse
+                        <button onclick="location='#'" class="btn-conectarse" >
+                            Conectarse
                        </button>
   
                   </li>
@@ -40,54 +48,43 @@
           </div>
       </nav>
 
-
       
-      <main role="main" class="container">
-        <div class="row">
-            
+      
+  <main role="main" class="container">
+  <div class="row">
+        
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-none d-sm-block">
+
                 <br><br><br><br><br><br><br>
               <div class="unlogged-container">
         <div class="unlogged-container-inner">
             <div class="unlogged-form-container">
                 <h1 class="texto1">¿Qué quieres escuchar hoy?</h1>
 
-  <div class="boton-sociales">
-    <button  class="boton boton-rojo" type="button"><span id="Facebook" class="unlogged-btn-label">Facebook</span> </button>
-     <button class="boton boton-rojo2" type="button"><span class="Google" class="unlogged-btn-label">Google</span></button>
-    </div>
+    <div class="boton-sociales">
+      <button  type="summit" class="btn btn-default btn-primary" style="width: 150px; height: 40px;float: center"><span style="float: left"><img src="img/facebook.svg" width="27" height="22">Facebook</span> </button>
+      <button class="boton boton-rojo2" type="summit" ><span ><img src="img/googl.svg" width="30" height="20">Google</span></button>
+      </div>
 
-  <div class="login_form">
+   <div class="login_form">
+    <div>
     <form class="unlogged-form" data-type="form-page">
-        <div  class="unlogged-input-container">
-          <select class="selec">
-            <option value="-" >País</option>
-              <option value="1" > Honduras  </option>
-             <option value="2">Panama   </option>
-             <option value="3">costa Rica  </option>
-             <option value="4">salvador </option>
-             <option value="5">Guatemala </option>
-                        </select>
-              </div>
+       
+           <div  class="unlogged-input-container">
+          <input id="nombreu" class="inp"  type="text"  id="nombreu" placeholder="Correo Electronico" >
+          </div>
 
-  <div >
-    <input class="tel" type="text" placeholder="telefono" ><br><br>
+          <div >
+          <input class="inp"  type="password" id="contrasena" placeholder="Contraseña" ><br><br>
+          </div>
+    </form>
     </div>
-
-    <div class="inform">
-        <select  class="sexo">
-            <option value="-">Genero</option> 
-           <option value="1" >Hombre</option>
-              <option value="2" >Mujer</option>
-               <option value="3">No comentar</option>
-          </select>
-          
-          <input  class="edad" type="number" placeholder="edad">
-    </div>
-          
-   <button  onclick="location='#'" class="btn btn-success" type="button" style="color:rgb(255, 255, 255)">Conectarse</button>
+    
+          <div id="resultado">
+          </div>
+    <button  type="summit" id="btn-conectarse" class="btn btn-success"  style="color:rgb(255, 255, 255)">Conectarse</button>
   
-     </form>
+     
        </div>
          <div ><a href="#"><p class="Conectardi">Conectarse con la dirección de email</p></a></div>
                     
@@ -95,22 +92,21 @@
                   </a>
                   ¿Todavía no tienes una cuenta Deezer? <a  href="#">Registrarse</a></div>
                 </div>
-              </div>
+           </div>
           </div>
-                 </div>
-           <div class="container">
-            <div id="foto" class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"  style="
-            padding-left: 210px ">
-            <img  src="img/inicio/chico.png" >
-          </div>
-
-        </div> <!-- /. -->
+        </div>
+     <div id="foto" class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="
+                 padding-left: 39% ">
+                   <img src="img/inicio/chica.png" >
+        </div>
+      
+  </div> <!-- /. --->
+              
         
-
-        
-      </main>
+  </main>
 
 
+      
       <section class="footer" style=" padding: 200px 80px 80px 80px">
       
         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12" id="prub">
@@ -172,13 +168,16 @@
     
         
   </section>
-    
+  <script type="text/javascript" src="js/jquery.min.js"></script>
 
-        <script src="js/jquery-3.3.1.min.js"></script>
-    
-        <script src="js/bootstrap.min.js"></script>
-      
-        <script src="js/login.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/login.min.js"></script>
+  <script src="js/login.js"></script>
+  <script type="text/javascript">
+    $(function () {
+$('[data-toggle="popover"]').popover();
+});
+  </script>
 </body>
 
 </html>
