@@ -96,10 +96,10 @@
         
           
    <button  id="btn-registro" class="btn btn-success" type="submit" style="color:rgb(255, 255, 255)">Registrarse</button>
-   <div id="resultado">
-           
-           </div>
- 
+   <center>
+      <div id="resultado">        
+          </div>
+    </center>
        </div>
         
                 <div> <a  role="button"> <p class="recuperacion">Al hacer clic en "Registrarse",</p>

@@ -79,9 +79,10 @@
           </div>
     </form>
     </div>
-    
+    <center>
           <div id="resultado">
           </div>
+    </center>
     <button  type="summit" id="btn-conectarse" class="btn btn-success"  style="color:rgb(255, 255, 255)">Conectarse</button>
   
      
