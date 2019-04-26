@@ -216,3 +216,14 @@ p1{
 #prub3, #prub4{
   margin-top: -150px;
 }
+#lst1{
+  background-color: #32323d;
+  border: #32323d;
+
+}
+
+#lst{
+  width: 250px;
+  background-color: #32323d;
+  border: #0a0a16;
+}
