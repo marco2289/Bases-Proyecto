@@ -132,7 +132,7 @@ $albums=$conexion->ejecutarInstruccion("SELECT A.CODIGO_ALBUM,A.NOMBRE_ALBUM,NVL
 
 
 
-	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/perfil.js"></script>
 	<script type="text/javascript">
