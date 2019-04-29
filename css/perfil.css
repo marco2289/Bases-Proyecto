@@ -750,7 +750,7 @@ hr{
 .perf2{
     cursor: pointer;
     width: 225px;
- 
+    border-radius: 50%;
 }
 
 .dash:hover{
@@ -1159,7 +1159,7 @@ top: -64px;
     top: 220px;
     position: relative;
     margin-top:-50px;
-    margin-left: 10px;
+    margin-left: 53px;
     visibility: hidden;
     opacity: 0;
 }
