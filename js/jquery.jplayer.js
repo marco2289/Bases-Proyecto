@@ -3338,7 +3338,7 @@
 			if(window.ActiveXObject) {
 				try {
 					flash = new ActiveXObject("ShockwaveFlash.ShockwaveFlash");
-					if (flash) { // flash will return null when ActiveX is disabled
+					if (flash) { 
 						var v = flash.GetVariable("$version");
 						if(v) {
 							v = v.split(" ")[1].split(",");
