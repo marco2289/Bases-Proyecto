@@ -217,7 +217,7 @@ html{
   float: right;
   margin-right: 30px;
   line-height: 32px;
-  color: #c5c5cd;
+  color: black;
 }
 
 .oculto>li>a>.flecha:hover{
@@ -348,10 +348,10 @@ html{
 }
 
 #iconos{
- color:#c2c2ca;
+ color:#32323D;
 }
 #iconos:hover{
-  color: white;
+  color: gray;
 }
 
 
@@ -1384,4 +1384,5 @@ color: #72727d;
     font-family: "Lucida Grande",Arial,sans-serif;
     font-size: 12px;
 }
+
 

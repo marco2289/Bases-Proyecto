@@ -1,5 +1,8 @@
 <?php
-
+session_start();
+ //$_SESSION['codigo_usuario']=1; 
+if(!isset($_SESSION['codigo_usuario']))
+	header('Location:conectarse.php');
 
 include("class/class-conexion.php");
 $conexion = new Conexion();
@@ -93,14 +96,39 @@ function cortar3($text){
 		color: red;
 	}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </style>
+
 
 </head> 
 <body>
 	
 	<div  class="col-lgj-2" id="barrra">
 		<img src="img/deezerr.png" id="fimage">
-		<input type="text" class="form-control" value="1" placeholder="Buscar" id="buscador">
+		<input type="text" class="form-control" value="" placeholder="Buscar" id="buscador">
 		
 		<ul class="nav" id="nav">
 
@@ -189,7 +217,7 @@ function cortar3($text){
 								<span onclick="playlists()" class="link">
 									<span class="color-primary pay"></span>
 									<span class="azz"> 
-										<span> Playlists</span>
+										<span> <strong>Seleccion de una Playlists</strong></span>
 										<span class="glyphicon glyphicon-chevron-right tamano" aria-hidden="true"></span>
 									</span>
 								</span>
@@ -279,7 +307,7 @@ function cortar3($text){
 										<span onclick="albums()" class="link">
 											<span class="color-primary albx"></span>
 											<span class="azz"> 
-												<span> Albumes</span>
+												<span> Popular</span>
 												<span class="glyphicon glyphicon-chevron-right tamano" aria-hidden="true"></span>
 											</span>
 										</span>
@@ -469,120 +497,108 @@ function cortar3($text){
 															</table>
 														</div>
 													</div>
-												</ul>
+												</ul>			
 												<div id="jp_container_1"  class="jp-video jp-video-270p" role="application" aria-label="media player">
-													<div class="jp-type-playlist" >
-														<span style="position: absolute;" id="detalles">
-															<p class="nombresong"><a href="#" id="nombresong"></a></p>
-															<p class="nombreartista" style="margin-top: -5px">de<a href="#" id="nombreartista"></a></p>
-														</span>	
-														<div id="jquery_jplayer_1" class="jp-jplayer">
+								<div class="jp-type-playlist" >
+									<span style="position: absolute;" id="detalles">
+										<p class="nombresong"><a href="#" id="nombresong"></a></p>
+										<p class="nombreartista" style="margin-top: -5px"><a href="#" id="nombreartista"></a></p>
+									</span>	
+									
+									<div id="jquery_jplayer_1" class="jp-jplayer" style="background:#F0F0F0; width:100px height:60px;">
 
+									</div>
+									<div class="jp-gui">
+															
+									<div class="jp-interface">	
+											
+											<div class="jp-progress">
+												<div class="jp-seek-bar">
+													<div class="jp-play-bar">
+
+													</div>
+												</div>
+											</div>
+						
+										<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+										<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+											<div class="jp-controls-holder">
+												<div class="jp-controls">
+													<a href="#" title="Anterior"><span class="jp-previous glyphicon glyphicon-step-backward" aria-hidden="true"></span></a>
+													<a href="" title="Pausa" id="pausee"><span class="jp-pause glyphicon glyphicon-pause"></span></a>
+													<a href="" id="playy"  title="Reproducir"><span class="jp-play glyphicon glyphicon-play"></span></a>
+													<a href="#" title="Siguiente"><span class="jp-next glyphicon glyphicon-step-forward" aria-hidden="true"></span></a>
+												</div>
+												
+												
+													</span></a>
+														<div class="hijo6 " id="hijo6" >
+															<div class="jp-playlist" >
+																<div id="listaa">
+																	<div id="sublistaa">
+																		<div>
+																			<h2 class="espera elip estilo">Lista de espera</h2>
+																				<h3 class="total elip estilo">15 canciones 4:34:43</h3>
+																					<div id="chek">
+																						<input type="checkbox" name="chk3" id="chk3"><label for="chk3"><p >Recomendaciones automaticas</p> </label>
+																					</div>
+																		</div>
+																	</div>
+																</div>
+																<div id="ul">
+																	<ul id="listplay">
+																		<!-- The method Playlist.displayPlaylist() uses this unordered list -->
+																		<li>&nbsp;</li>
+																		</ul>
+																</div>
+															</div>
 														</div>
-														<div class="jp-gui">
 
-															<div class="jp-interface">
-																<div class="jp-progress">
-																	<div class="jp-seek-bar">
-																		<div class="jp-play-bar"></div>
-																	</div>
-																</div>
-																<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
-																<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
-																<div class="jp-controls-holder">
-																	<div class="jp-controls">
-
-																		<a href="#" title="Anterior"><span class="jp-previous glyphicon glyphicon-step-backward" aria-hidden="true"></span></a>
-																		<a href="" title="Pausa" id="pausee"><span class="jp-pause glyphicon glyphicon-pause"></span></a>
-																		<a href="" id="playy"  title="Reproducir"><span class="jp-play glyphicon glyphicon-play"></span></a>
-																		<a href="#" title="Siguiente"><span class="jp-next glyphicon glyphicon-step-forward" aria-hidden="true"></span></a>
-
-																	</div>
-																	<div class="jp-volume-controls">			
-																		<a href="#" title="Silencio"><span class="jp-mute glyphicon glyphicon-volume-off" id="iconos" aria-hidden="true"></span></a>
-																		<div class="ocultoo" id="barravol">
-																			<div class="jp-volume-bar ">
-																				<div class="jp-volume-bar-value"></div>
-																			</div></div>
-
-																			<a href="#" class="ocultoo" id="volplus"><span class="jp-volume-max glyphicon glyphicon-volume-up " id="iconos" aria-hidden="true"></span></a>
-
-																		</div>
-																		<div class="jp-toggles">
-																			<a href="#" id="repetir" title="Repetir todas las canciones de la lista"><span class=" jp-repeat glyphicon glyphicon-refresh"  aria-hidden="true"></span></a>
-
-																			<a href="#" id="ran" title="Activar modo aleatorio"><span class=" jp-shuffle glyphicon glyphicon-random" aria-hidden="true"></span></a>
-																			<a href="#" id="cola" title="Lista de espera"><span class="glyphicon glyphicon-list-alt" id="iconos" >
-																			</span></a>
-																			<div class="hijo6 " id="hijo6" >
-
-																				<div class="jp-playlist" >
-																					<div id="listaa">
-																						<div id="sublistaa">
-																							<div>
-																								<h2 class="espera elip estilo">Lista de espera</h2>
-																								<h3 class="total elip estilo">15 canciones 4:34:43</h3>
-																								<div id="chek">
-																									<input type="checkbox" name="chk3" id="chk3"><label for="chk3"><p >Recomendaciones automaticas</p> </label>
-																								</div>
-																							</div>
-
-																						</div>
-																					</div>
-																					<div id="ul">
-																						<ul id="listplay">
-																							<!-- The method Playlist.displayPlaylist() uses this unordered list -->
-																							<li>&nbsp;</li>
-																						</ul>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																	<div class="jp-details">
-																		<div class="jp-title" aria-label="title">&nbsp;</div>
-																	</div>
-																</div>
-															</div>
-
-															<div class="jp-no-solution">
-																<span>Update Required</span>
-																To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
-															</div>
+											</div>
+											<div class="jp-details">
+												<div class="jp-title" aria-label="title">&nbsp;</div>
+											</div>
+										</div>
+										<div class="jp-toggles">
+													<a href="#" id="repetir" title="Repetir todas las canciones de la lista"><span class=" jp-repeat glyphicon glyphicon-refresh"  aria-hidden="true"></span></a>
+													<a href="#" id="ran" title="Activar modo aleatorio"><span class=" jp-shuffle glyphicon glyphicon-random" aria-hidden="true"></span></a>
+													<a href="#" id="cola" title="Lista de espera"><span class="glyphicon glyphicon-list-alt" id="iconos" >
+										</div>
+										<div class="jp-volume-controls" style="position:absolute; left: 724px; padding-top: 588px; color: #32323D;">			
+													<a href="#" title="Silencio"><span class="jp-mute glyphicon glyphicon-volume-off" id="iconos" aria-hidden="true"></span></a>
+													<div class="ocultoo" id="barravol">
+														<div class="jp-volume-bar ">
+															<div class="jp-volume-bar-value"></div>
 														</div>
 													</div>
-
-									<!--
-									<div id="cover">
-
-										
-									</div>
-									
-									
-
-									<div style="color: white;position: relative;padding-top: 74px">
-										<div style="text-align: center;">
-											<a href="#"><span class="glyphicon glyphicon-step-backward" id="iconos"  aria-hidden="true" style="font-size: 24px;"></span></a>
-											<a href="#" ><span class="glyphicon glyphicon-play cambia" id="iconos"  aria-hidden="true" style="font-size: 34px;padding-left: 10px;padding-right: 10px"></span></a>
-											<a href="#"><span class="glyphicon glyphicon-step-forward" id="iconos" aria-hidden="true" style="font-size: 24px"></span></a>
-
+													<a href="#" class="ocultoo" id="volplus"><span class="jp-volume-max glyphicon glyphicon-volume-up " id="iconos" aria-hidden="true"></span></a>
 										</div>
-										<div style="padding-top: 7px">
-											<a href="#"><span class="glyphicon glyphicon-volume-up" id="iconos" aria-hidden="true" style="font-size: 17px;padding-left: 20px"></span></a>
-											<a href="#"><span class="glyphicon glyphicon-refresh" id="iconos"  aria-hidden="true" style="font-size: 17px;padding-left: 33px"></span></a>
-											<a href="#"><span class="glyphicon glyphicon-random" id="iconos" aria-hidden="true" style="font-size: 17px;padding-left: 33px"></span></a>
-											<a href="#"><span class="glyphicon glyphicon-list-alt" id="iconos" aria-hidden="true" style="font-size: 17px;padding-left:33px "></span></a>
-										</div>
-										
 									</div>
-								-->
+									<!--div class="jp-no-solution">
+									<span>Update Required</span>
+									To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+									</div-->
+								</div>
 							</div>
+						</div>
+
+
+
+
+
+
+						
+							
+												
+
+
 
 							<div id="drop">
+								
 							</div>
-							<div id="cover">
+							<!--div id="cover">
 
-							</div>
+							</div-->
 							<div class="col-lgj-10 " id="ifra"  >
 								<iframe class="contenido" src="principal.php" frameborder="0"  ></iframe>
 							</div>
@@ -757,10 +773,10 @@ function cortar3($text){
 								},  [
 
 								{
-									title:"voices",
-									artist:"rev theory",
-									mp3:"http://localhost/IS501-DEEZER-V1.1/musica/randi.mp3",
-									poster: "http://localhost/IS501-DEEZER-V1.1/musica/covers/orton.jpg"
+									title:"",
+									artist:"",
+									mp3:"",
+									poster: ""
 								}
 								], {
 									swfPath: "../../dist/jplayer",
@@ -804,9 +820,5 @@ function cortar3($text){
 
 
 							</script>
-
-
-
-
 						</body>
 						</html>
