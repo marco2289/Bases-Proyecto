@@ -82,7 +82,7 @@ $resultado["mensaje"]=$mensaje;
 				$_SESSION["codigo_usuario"]=$row2["CODIGO_USUARIO"];
 			}
 			$resultado["codigo"]=1;
-			$resultado["mensaje"]="Login exitoso";
+			$resultado["mensaje"]="Conexion exitoso";
 		}else{
 			$resultado["codigo"]=0;
 			$resultado["mensaje"]="Correo o Contrasena incorrecta";
