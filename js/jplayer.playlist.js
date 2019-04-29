@@ -15,7 +15,6 @@
  *  - jPlayer 2.8.2+
  */
 
-
  /*global jPlayerPlaylist:true */
 
  (function($, undefined) {

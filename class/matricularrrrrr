@@ -1,0 +1,57 @@
+ public function guardarMatricula(){
+            $respuesta = array();
+            if(isset($_POST["seccion"])){
+                mkdir("../data/carreras/".$_POST["facultad"]."/asignaturas/secciones/".$_POST["codCarrera"]."-".$_POST["codClase"]);
+
+                if(!file_exists("../data/carreras/".$_POST["facultad"]."/asignaturas/secciones/".$_POST["codCarrera"]."-".$_POST["codClase"]."/".$_POST["seccion"].".json")){
+                    $archivo = fopen("../data/carreras/".$_POST["facultad"]."/asignaturas/secciones/".$_POST["codCarrera"]."-".$_POST["codClase"]."/".$_POST["seccion"].".json", "w");
+                }
+                $archivo = fopen("../data/carreras/".$_POST["facultad"]."/asignaturas/secciones/".$_POST["codCarrera"]."-".$_POST["codClase"]."/".$_POST["seccion"].".json", "a+");
+    
+                //obtener el numero de UV de la clase/////////////
+                        $archivoClases = fopen("../data/carreras/".$_POST["facultad"]."/asignaturas/".$_POST["codCarrera"].".json","r");   
+                        while(($linea = fgets($archivoClases))){
+                            $registroClase = json_decode($linea,true);
+                            if($registroClase["codigo"] == $_POST["codClase"]){
+                                //Obtener uv de clase
+               					 $registro["UV"] =$registroClase["uv"];
+                                break;
+                            }
+                        }
+                        fclose($archivoClases);
+                /////////////////////////////////////////
+/*
+                $registro["aula"] = $this->aula;
+                $registro["cupos"] = $this->cupos;
+                $registro["inicio"] = $this->HI;
+                $registro["final"] = $this->HF;
+                $registro["dias"] = $this->dias;
+                $registro["edificio"] = $this->edificio;
+                $registro["docente"] = $this->docente; */
+        
+              //obtener el nombre de la clase/////////////
+
+                        $archivoClases = fopen("../data/carreras/".$_POST["facultad"]."/asignaturas/".$_POST["codCarrera"].".json","r");   
+                        while(($linea = fgets($archivoClases))){
+                            $registroClase = json_decode($linea,true);
+                            if($registroClase["codigo"] == $_POST["codClase"]){
+                                //Obtener nombre de clase
+                $registro["clase"] =$registroClase["clase"];
+                                break;
+                            }
+                        }
+                        fclose($archivoClases);
+                /////////////////////////////////////////
+
+                fwrite($archivo, json_encode($registro)."\n");
+                fclose($archivo);
+    
+                $respuesta = $registro;
+                $respuesta["num"] = 1;
+                echo json_encode($respuesta);
+            }else{
+                $respuesta["num"] = 0;
+                echo json_encode($respuesta);
+               
+            }
+        }
