@@ -95,31 +95,6 @@ function cortar3($text){
 	li{ 
 		color: red;
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </style>
 
 
@@ -132,11 +107,11 @@ function cortar3($text){
 		
 		<ul class="nav" id="nav">
 
-			<li  id="start" onclick="reload('hijoo');ifra(3);arreglo('start','first','mod','first3','start2','first2','start4','first4');" ><a href="#"  class="si"> <p id="first" >INICIO</p></a>
+			<li  id="start" onclick="reload('hijoo');ifra(3);arreglo('start','first','mod','first3','start2','first2','start4','first4');" ><a href="#"  class="si"> <p id="first"  style="font-weight:600; font-size:16px;">Inicio</p></a>
 
 
 			</li>
-			<li onclick="ifra(2);" ><a id="start2" href="#" class="si" onclick="reload('hijoo');arreglo('start2','first2','start','first','mod','first3','start4','first4');"><p id="first2">RECOMENDACIONES</p></a>
+			<li onclick="ifra(2);" ><a id="start2" href="#" class="si" onclick="reload('hijoo');arreglo('start2','first2','start','first','mod','first3','start4','first4');"><p id="first2" style="font-weight:600; font-size:16px;">Explorar</p></a>
 			</li>
 			<hr>
 			<li onclick="reload('hijoo')"  id="li3">
