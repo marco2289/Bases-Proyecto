@@ -72,7 +72,7 @@ function cortar3($text){
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Deezer</title>
+	<title>Mi Primera Luz - Alux Nahual - Deezer</title>
 	<link rel="icon" href="img/fav.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/personalizado.css">
@@ -95,6 +95,84 @@ function cortar3($text){
 	li{ 
 		color: red;
 	}
+	.sidebar-header .conversion-banner {
+    color: #fff;
+	}
+	.conversion-banner {
+		background-color: #2692b7;
+		color: #fff;
+		margin-bottom: 5px;
+		padding: 14px 18px;
+	}
+	*, :after, :before {
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	user agent stylesheet
+	div {
+		display: block;
+	}
+	.dir-ltr {
+		direction: ltr;
+	}
+
+	.c012 {
+    overflow: hidden;
+    min-width: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.c0121 {
+    color: #F8F8F9;
+    border-color: #F8F8F9;
+}
+
+.c011 {
+    border: 1px solid transparent;
+    cursor: pointer;
+    height: 32px;
+    display: inline-flex;
+    padding: 0 12px;
+    position: relative;
+    font-size: 12px;
+    max-width: 100%;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    align-items: center;
+    font-family: Open Sans;
+    font-weight: 600;
+    line-height: 30px;
+    border-radius: 3px;
+    vertical-align: middle;
+    justify-content: center;
+    text-decoration: none;
+}
+a {
+    color: #0a0a16;
+    cursor: pointer;
+    outline: 0 none;
+    text-decoration: none;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+.sidebar-header .conversion-banner {
+    color: #fff;
+}
+.conversion-banner {
+    background-color: #2692b7;
+    color: #fff;
+    margin-bottom: 5px;
+    padding: 14px 18px;
+}
+.dir-ltr {
+    direction: ltr;
+}
 </style>
 
 
@@ -103,10 +181,12 @@ function cortar3($text){
 	
 	<div  class="col-lgj-2" id="barrra">
 		<img src="img/deezerr.png" id="fimage">
-		<input type="text" class="form-control" value="" placeholder="Buscar" id="buscador">
 		
 		<ul class="nav" id="nav">
-
+		<br>
+				<li>
+					<center><div class="conversion-banner"><p class="conversion-banner-description">Utilizas la versión gratuita. Suscríbete y sáltate gratis los anuncios durante 30 días.</p><a class="c011 c0121 c0125" role="button" style="border: 2px solid white;" href="https://www.deezer.com/offers?origin=CONVERSION_BANNER" target="_blank"><span class="c012" style="color:white; font-weight:600">SUSCRIBIRSE</span></a></div></center>
+				</li>
 			<li  id="start" onclick="reload('hijoo');ifra(3);arreglo('start','first','mod','first3','start2','first2','start4','first4');" ><a href="#"  class="si"> <p id="first"  style="font-weight:600; font-size:16px;">Inicio</p></a>
 
 
@@ -163,15 +243,12 @@ function cortar3($text){
 					</ul>
 
 				</div>
-				<div id="icon2"><svg class="svg-icon icon2 svg-icon-settings settings" onclick="ver('hijo','hijo2','hijo3','hijo4','hijo5','hijo6');"  viewBox="0 0 12 12" role="img" aria-labelledby="ariaIconLabel1" height="15" width="15"><g><path d="M12,6.66665365 L12,5.33334049 L10.5489016,4.97053954 C10.4304016,4.44503537 10.2228507,3.9544824 9.94365134,3.51272632 L10.7141009,2.22871398 L9.77119813,1.28595766 L8.48725024,2.0563135 C8.04550002,1.77706141 7.55490017,1.56951053 7.02940187,1.45101047 L6.66664779,0 L5.33334635,0 L4.97059813,1.4509636 C4.44504709,1.56941678 3.95444724,1.77701454 3.51265015,2.05626663 L2.22880187,1.28596352 L1.28589907,2.22871984 L2.05624905,3.51263257 C1.77699696,3.95443552 1.56944608,4.44504123 1.45099876,4.97059227 L0,5.33334049 L0,6.66665365 L1.45099876,7.02940773 C1.56944608,7.55491189 1.7770497,8.04556448 2.05624905,8.48736743 L1.28589907,9.77122743 L2.22880187,10.7140365 L3.51265015,9.94373337 C3.9544531,10.2229855 4.44505295,10.4305363 4.97059813,10.5489895 L5.33334635,12 L6.66664779,12 L7.02939601,10.5489368 C7.55484744,10.4304367 8.04549416,10.2228859 8.48724438,9.94368064 L9.77119227,10.7140365 L10.7140951,9.77122743 L9.94364548,8.48726782 C10.2228976,8.04546487 10.4303957,7.55491189 10.5488958,7.02940773 L12,6.66665365 L12,6.66665365 Z M3.5,6 C3.5,4.61928525 4.61930254,3.5 5.99995331,3.5 C7.38069746,3.5 8.5,4.61928525 8.5,6 C8.5,7.38071475 7.38069746,8.5 5.99995331,8.5 C4.61930254,8.5 3.5,7.38071475 3.5,6 L3.5,6 Z"></path></g></svg></div>
 
-				<li>
-					<center><button class="boton">+ SUSCRIBIRSE</button></center>
-				</li>
+
 				<li id="start4" onclick="reload('hijoo');arreglo('start4','first4','start','first','mod','first3','start2','first2');" >
 					<a href="#" class="si" >
 						<span id="first4">
-							<svg class="svg-icon icon3 svg-icon-love" viewBox="0 0 12 12" aria-hidden="true" height="16" width="16"><g><path d="M6.00011325,2.5 C6.00011325,2.5 5.00009438,1 3.25,1 C1.66669813,1 1.65327318e-16,2.25 0,4.5 C1.65327318e-16,7.5 6,11.5 6,11.5 C6,11.5 11.9999997,7.5 12,4.5 C12.0000002,2.25 10.3335284,1 8.75,1 C7.00013213,1 6.00011325,2.5 6.00011325,2.5 Z"></path></g></svg> <span style="margin-left: -4px;" >Canciones favoritas</span></span >  
+							<svg class="svg-icon icon3 svg-icon-love" viewBox="0 0 12 12" aria-hidden="true" height="16" width="16"><g><path d="M6.00011325,2.5 C6.00011325,2.5 5.00009438,1 3.25,1 C1.66669813,1 1.65327318e-16,2.25 0,4.5 C1.65327318e-16,7.5 6,11.5 6,11.5 C6,11.5 11.9999997,7.5 12,4.5 C12.0000002,2.25 10.3335284,1 8.75,1 C7.00013213,1 6.00011325,2.5 6.00011325,2.5 Z"></path></g></svg> <span style="margin-left: -4px;" >Mis Favoritas</span></span >  
 						</a>
 
 					</li>
