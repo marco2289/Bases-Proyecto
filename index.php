@@ -105,31 +105,20 @@ function cortar3($text){
 		margin-bottom: 5px;
 		padding: 14px 18px;
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	#btn-esperar{
+		height:40px;
+		width:130px; 
+		border: 2px solid white; 
+		border-radius:10%; 
+		padding:-15px;
+	}
+	#btn-esperar:hover{
+		background: rgba(0,0,0,0.2);
+		height:40px; 
+		border: 2px solid white; 
+		border-radius:10%; 
+		padding:-15px;
+	}
 </style>
 
 
@@ -500,18 +489,18 @@ function cortar3($text){
 												</ul>			
 												<div id="jp_container_1"  class="jp-video jp-video-270p" role="application" aria-label="media player">
 								<div class="jp-type-playlist" >
-									<span style="position: absolute;" id="detalles">
+								<span style="position: absolute;" id="detalles">
 										<p class="nombresong"><a href="#" id="nombresong"></a></p>
-										<p class="nombreartista" style="margin-top: -5px"><a href="#" id="nombreartista"></a></p>
+										<div><p class="nombreartista" style="margin-top: -5px;"><a href="#" id="nombreartista"></a></p></div>
 									</span>	
 									
-									<div id="jquery_jplayer_1" class="jp-jplayer" style="background:#F0F0F0; width:100px height:60px;">
+									<div id="jquery_jplayer_1" class="jp-jplayer" style="background:#F0F0F0; width:100px height:60px; display:none;">
 
 									</div>
 									<div class="jp-gui">
 															
 									<div class="jp-interface">	
-											
+									<button id="btn-esperar" style="position:absolute; left:1180px; top:25px; font-size:10px;"><img  src="img-slider/28x28-000000-80-0-0.jpg" alt="" crossorigin="anonymous" height="28" width="28" style="border-radius:10%; margin-right:2px;">Lista de espera</button>
 											<div class="jp-progress">
 												<div class="jp-seek-bar">
 													<div class="jp-play-bar">
@@ -519,7 +508,6 @@ function cortar3($text){
 													</div>
 												</div>
 											</div>
-						
 										<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
 										<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
 											<div class="jp-controls-holder">
@@ -542,6 +530,7 @@ function cortar3($text){
 																					<div id="chek">
 																						<input type="checkbox" name="chk3" id="chk3"><label for="chk3"><p >Recomendaciones automaticas</p> </label>
 																					</div>
+																					
 																		</div>
 																	</div>
 																</div>
@@ -563,6 +552,8 @@ function cortar3($text){
 													<a href="#" id="repetir" title="Repetir todas las canciones de la lista"><span class=" jp-repeat glyphicon glyphicon-refresh"  aria-hidden="true"></span></a>
 													<a href="#" id="ran" title="Activar modo aleatorio"><span class=" jp-shuffle glyphicon glyphicon-random" aria-hidden="true"></span></a>
 													<a href="#" id="cola" title="Lista de espera"><span class="glyphicon glyphicon-list-alt" id="iconos" >
+
+									
 										</div>
 										<div class="jp-volume-controls" style="position:absolute; left: 724px; padding-top: 588px; color: #32323D;">			
 													<a href="#" title="Silencio"><span class="jp-mute glyphicon glyphicon-volume-off" id="iconos" aria-hidden="true"></span></a>
@@ -572,29 +563,18 @@ function cortar3($text){
 														</div>
 													</div>
 													<a href="#" class="ocultoo" id="volplus"><span class="jp-volume-max glyphicon glyphicon-volume-up " id="iconos" aria-hidden="true"></span></a>
+
 										</div>
+										
 									</div>
+
 									<!--div class="jp-no-solution">
 									<span>Update Required</span>
 									To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
 									</div-->
 								</div>
 							</div>
-						</div>
-
-
-
-
-
-
-						
-							
-												
-
-
-
-							<div id="drop">
-								
+						</div>		
 							</div>
 							<!--div id="cover">
 
