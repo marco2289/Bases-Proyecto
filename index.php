@@ -2,7 +2,7 @@
 session_start();
  //$_SESSION['codigo_usuario']=1; 
 if(!isset($_SESSION['codigo_usuario']))
-	header('Location:Landing-Page/index2.php');
+	header('Location:conectarse.php');
 
 include("class/class-conexion.php");
 $conexion = new Conexion();
@@ -95,8 +95,9 @@ function cortar3($text){
 	li{ 
 		color: red;
 	}
+
 	.sidebar-header .conversion-banner {
-    color: #fff;
+    	color: #fff;
 	}
 	.conversion-banner {
 		background-color: #2692b7;
@@ -104,75 +105,31 @@ function cortar3($text){
 		margin-bottom: 5px;
 		padding: 14px 18px;
 	}
-	*, :after, :before {
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-	}
-	user agent stylesheet
-	div {
-		display: block;
-	}
-	.dir-ltr {
-		direction: ltr;
-	}
 
-	.c012 {
-    overflow: hidden;
-    min-width: 0;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-*, :after, :before {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.c0121 {
-    color: #F8F8F9;
-    border-color: #F8F8F9;
-}
 
-.c011 {
-    border: 1px solid transparent;
-    cursor: pointer;
-    height: 32px;
-    display: inline-flex;
-    padding: 0 12px;
-    position: relative;
-    font-size: 12px;
-    max-width: 100%;
-    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    align-items: center;
-    font-family: Open Sans;
-    font-weight: 600;
-    line-height: 30px;
-    border-radius: 3px;
-    vertical-align: middle;
-    justify-content: center;
-    text-decoration: none;
-}
-a {
-    color: #0a0a16;
-    cursor: pointer;
-    outline: 0 none;
-    text-decoration: none;
-}
-user agent stylesheet
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-}
-.sidebar-header .conversion-banner {
-    color: #fff;
-}
-.conversion-banner {
-    background-color: #2692b7;
-    color: #fff;
-    margin-bottom: 5px;
-    padding: 14px 18px;
-}
-.dir-ltr {
-    direction: ltr;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </style>
 
 
@@ -181,24 +138,24 @@ a:-webkit-any-link {
 	
 	<div  class="col-lgj-2" id="barrra">
 		<img src="img/deezerr.png" id="fimage">
+
 		
 		<ul class="nav" id="nav">
 		<br>
-				<li>
-					<center><div class="conversion-banner"><p class="conversion-banner-description">Utilizas la versión gratuita. Suscríbete y sáltate gratis los anuncios durante 30 días.</p><a class="c011 c0121 c0125" role="button" style="border: 2px solid white;" href="https://www.deezer.com/offers?origin=CONVERSION_BANNER" target="_blank"><span class="c012" style="color:white; font-weight:600">SUSCRIBIRSE</span></a></div></center>
-				</li>
-			<li  id="start" onclick="reload('hijoo');ifra(3);arreglo('start','first','mod','first3','start2','first2','start4','first4');" ><a href="#"  class="si"> <p id="first"  style="font-weight:600; font-size:16px;">Inicio</p></a>
+			<div class="conversion-banner" ><p class="conversion-banner-description" style="font-weight:600; text-align:center;">Utilizas la versión gratuita. Suscríbete y sáltate gratis los anuncios durante 30 días.<center><button type="button" class="btn btn-outline-info" href="https://www.deezer.com/offers?origin=CONVERSION_BANNER" style="background:#2692B7; border: 1px solid white;">SUSCRIBIRSE</button></center></div>
+
+			<li  id="start" onclick="reload('hijoo');ifra(3);arreglo('start','first','mod','first3','start2','first2','start4','first4');" ><a href="#"  class="si"> <p id="first" style="font-weight:600; color:white; font-size:15px;">Inicio</p></a>
 
 
 			</li>
-			<li onclick="ifra(2);" ><a id="start2" href="#" class="si" onclick="reload('hijoo');arreglo('start2','first2','start','first','mod','first3','start4','first4');"><p id="first2" style="font-weight:600; font-size:16px;">Explorar</p></a>
+			<li onclick="ifra(2);" ><a id="start2" href="#" class="si" onclick="reload('hijoo');arreglo('start2','first2','start','first','mod','first3','start4','first4');"><p id="first2" style="font-weight:600; color:white; font-size:15px;">Explorar</p></a>
 			</li>
 			<hr>
 			<li onclick="reload('hijoo')"  id="li3">
 				<a id="mod" href="#" class="si" onclick="arreglo('mod','first3','start','first','start2','first2','start4','first4');"">
 					<?php 
 					while ($row = $conexion->obtenerRegistro($foto)) { ?>
-					<span id="first3"><img src="<?php echo $row['FOTO']; }?>" width="24" height="24" style="border-radius: 50%;margin-right: 5px"> <span id="aayuda">Mi Musica</span> </span>
+					<span id="first3"><img src="<?php echo $row['FOTO']; }?>" width="0" height="0" style="border-radius: 50%;margin-right: 5px"> <span id="aayuda">Mi Musica</span> </span>
 				</a>
 
 
@@ -243,8 +200,6 @@ a:-webkit-any-link {
 					</ul>
 
 				</div>
-
-
 				<li id="start4" onclick="reload('hijoo');arreglo('start4','first4','start','first','mod','first3','start2','first2');" >
 					<a href="#" class="si" >
 						<span id="first4">
@@ -437,10 +392,7 @@ a:-webkit-any-link {
 
 
 									<li  id="li8" onclick="li('li8');ver('hijo4','hijo2','hijo3','hijo','hijo5','hijo6');">
-										<a href="#"  class="si">
-											<span>
-												<svg class="svg-icon icon3 svg-icon-time" viewBox="0 0 12 12" aria-hidden="true" height="16" width="16"><g><path d="M11,6 C11,3.23857625 8.76142375,1 6,1 C3.23857625,1 1,3.23857625 1,6 C1,8.76142375 3.23857625,11 6,11 C8.76142375,11 11,8.76142375 11,6 Z M7,6.50952148 L7,3.49047852 C7,3.21505737 6.77614237,3 6.5,3 C6.23193359,3 6,3.21959471 6,3.49047852 L6,6 L4.49538898,6 C4.2157526,6 4,6.22385763 4,6.5 C4,6.76806641 4.2217932,7 4.49538898,7 L6.50461102,7 C6.64282453,7 6.76543159,6.94531282 6.85409473,6.85665508 C6.94267961,6.76617647 7,6.64418681 7,6.50952148 Z" fill-rule="evenodd"></path></g></svg></span>Actividades
-											</a>
+		
 
 										</li>
 										<div class="hijo4" id="hijo4">
@@ -504,10 +456,6 @@ a:-webkit-any-link {
 
 
 											<li  id="li9" onclick="li('li9');ver('hijo5','hijo2','hijo3','hijo4','hijo','hijo6')">
-												<a href="#" class="si">
-													<span>
-														<svg class="svg-icon icon3 svg-icon-app" viewBox="0 0 12 12" aria-hidden="true" height="16" width="16"><g><path d="M0.375518305,6.90836424 C-0.126157409,6.40668852 -0.124187159,5.59134123 0.375518305,5.09163576 L5.09163576,0.375518305 C5.59331148,-0.126157409 6.40865877,-0.124187159 6.90836424,0.375518305 L11.6244817,5.09163576 C12.1261574,5.59331148 12.1241872,6.40865877 11.6244817,6.90836424 L6.90836424,11.6244817 C6.40668852,12.1261574 5.59134123,12.1241872 5.09163576,11.6244817 L0.375518305,6.90836424 L0.375518305,6.90836424 Z M8.56634425,6.00000601 L4.9734623,3.9469246 L4.9734623,8.0530754 L8.56634425,6.00000601 L8.56634425,6.00000601 Z"></path></g></svg></span>Aplicaciones
-													</a> 
 
 												</li>
 												<div class="hijo5" id="hijo5">

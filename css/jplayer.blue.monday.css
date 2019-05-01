@@ -70,10 +70,11 @@
   background-color: white;
   width: 613%; 
   padding-top:10px;
+  margin-top:-15px;
 }
 
 .jp-audio .jp-interface {
-  height: 80px; }
+  height: 90px; }
 
 .jp-audio-stream .jp-interface {
   height: 80px; }
@@ -191,13 +192,13 @@ top:8px;
   height: 4px; }
 
 .jp-seek-bar {
-  background: url("../image/jplayer.blue.monday.jpg") 0 -201px repeat-x;
+  background: url("../image/jplayer.blue.monday.jpg") 0 -202px repeat-x;
   width: 100px;
   height: 80%;
   cursor: pointer; }
 
 .jp-play-bar {
-  background: url("../image/jplayer.blue.monday.jpg") 0 -217px repeat-x;
+  background: url("../image/jplayer.blue.monday.jpg") 0 -218px repeat-x;
   width: 0px;
   height: 80%; }
 
