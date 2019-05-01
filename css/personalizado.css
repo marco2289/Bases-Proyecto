@@ -471,11 +471,12 @@ html{
 #nombreartista{
 font-family:"Open Sans", Arial, sans-serif;
 font-size:14px;
-z-index: 3;
+z-index: 10;
 position: relative;
 font-weight:normal;
-margin-left: 6px;
-color: #fff;
+margin-left: 336px;
+top: -14px;
+color: gray;
   white-space:nowrap; 
   overflow:hidden; 
   text-overflow:ellipsis;

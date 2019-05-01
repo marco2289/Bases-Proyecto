@@ -2,7 +2,7 @@
 session_start();
  //$_SESSION['codigo_usuario']=1; 
 if(!isset($_SESSION['codigo_usuario']))
-	header('Location:Landing-Page/index2.php');
+	header('Location:conectarse.php');
 
 include("class/class-conexion.php");
 $conexion = new Conexion();
@@ -72,7 +72,7 @@ function cortar3($text){
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Deezer</title>
+	<title>Mi Primera Luz - Alux Nahual - Deezer</title>
 	<link rel="icon" href="img/fav.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/personalizado.css">
@@ -96,30 +96,29 @@ function cortar3($text){
 		color: red;
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	.sidebar-header .conversion-banner {
+    	color: #fff;
+	}
+	.conversion-banner {
+		background-color: #2692b7;
+		color: #fff;
+		margin-bottom: 5px;
+		padding: 14px 18px;
+	}
+	#btn-esperar{
+		height:40px;
+		width:130px; 
+		border: 2px solid white; 
+		border-radius:10%; 
+		padding:-15px;
+	}
+	#btn-esperar:hover{
+		background: rgba(0,0,0,0.2);
+		height:40px; 
+		border: 2px solid white; 
+		border-radius:10%; 
+		padding:-15px;
+	}
 </style>
 
 
@@ -128,22 +127,24 @@ function cortar3($text){
 	
 	<div  class="col-lgj-2" id="barrra">
 		<img src="img/deezerr.png" id="fimage">
-		<input type="text" class="form-control" value="" placeholder="Buscar" id="buscador">
+
 		
 		<ul class="nav" id="nav">
+		<br>
+			<div class="conversion-banner" ><p class="conversion-banner-description" style="font-weight:600; text-align:center;">Utilizas la versión gratuita. Suscríbete y sáltate gratis los anuncios durante 30 días.<center><button type="button" class="btn btn-outline-info" href="https://www.deezer.com/offers?origin=CONVERSION_BANNER" style="background:#2692B7; border: 1px solid white;">SUSCRIBIRSE</button></center></div>
 
-			<li  id="start" onclick="reload('hijoo');ifra(3);arreglo('start','first','mod','first3','start2','first2','start4','first4');" ><a href="#"  class="si"> <p id="first" >INICIO</p></a>
+			<li  id="start" onclick="reload('hijoo');ifra(3);arreglo('start','first','mod','first3','start2','first2','start4','first4');" ><a href="#"  class="si"> <p id="first" style="font-weight:600; color:white; font-size:15px;">Inicio</p></a>
 
 
 			</li>
-			<li onclick="ifra(2);" ><a id="start2" href="#" class="si" onclick="reload('hijoo');arreglo('start2','first2','start','first','mod','first3','start4','first4');"><p id="first2">RECOMENDACIONES</p></a>
+			<li onclick="ifra(2);" ><a id="start2" href="#" class="si" onclick="reload('hijoo');arreglo('start2','first2','start','first','mod','first3','start4','first4');"><p id="first2" style="font-weight:600; color:white; font-size:15px;">Explorar</p></a>
 			</li>
 			<hr>
 			<li onclick="reload('hijoo')"  id="li3">
 				<a id="mod" href="#" class="si" onclick="arreglo('mod','first3','start','first','start2','first2','start4','first4');"">
 					<?php 
 					while ($row = $conexion->obtenerRegistro($foto)) { ?>
-					<span id="first3"><img src="<?php echo $row['FOTO']; }?>" width="24" height="24" style="border-radius: 50%;margin-right: 5px"> <span id="aayuda">Mi Musica</span> </span>
+					<span id="first3"><img src="<?php echo $row['FOTO']; }?>" width="0" height="0" style="border-radius: 50%;margin-right: 5px"> <span id="aayuda">Mi Musica</span> </span>
 				</a>
 
 
@@ -188,15 +189,10 @@ function cortar3($text){
 					</ul>
 
 				</div>
-				<div id="icon2"><svg class="svg-icon icon2 svg-icon-settings settings" onclick="ver('hijo','hijo2','hijo3','hijo4','hijo5','hijo6');"  viewBox="0 0 12 12" role="img" aria-labelledby="ariaIconLabel1" height="15" width="15"><g><path d="M12,6.66665365 L12,5.33334049 L10.5489016,4.97053954 C10.4304016,4.44503537 10.2228507,3.9544824 9.94365134,3.51272632 L10.7141009,2.22871398 L9.77119813,1.28595766 L8.48725024,2.0563135 C8.04550002,1.77706141 7.55490017,1.56951053 7.02940187,1.45101047 L6.66664779,0 L5.33334635,0 L4.97059813,1.4509636 C4.44504709,1.56941678 3.95444724,1.77701454 3.51265015,2.05626663 L2.22880187,1.28596352 L1.28589907,2.22871984 L2.05624905,3.51263257 C1.77699696,3.95443552 1.56944608,4.44504123 1.45099876,4.97059227 L0,5.33334049 L0,6.66665365 L1.45099876,7.02940773 C1.56944608,7.55491189 1.7770497,8.04556448 2.05624905,8.48736743 L1.28589907,9.77122743 L2.22880187,10.7140365 L3.51265015,9.94373337 C3.9544531,10.2229855 4.44505295,10.4305363 4.97059813,10.5489895 L5.33334635,12 L6.66664779,12 L7.02939601,10.5489368 C7.55484744,10.4304367 8.04549416,10.2228859 8.48724438,9.94368064 L9.77119227,10.7140365 L10.7140951,9.77122743 L9.94364548,8.48726782 C10.2228976,8.04546487 10.4303957,7.55491189 10.5488958,7.02940773 L12,6.66665365 L12,6.66665365 Z M3.5,6 C3.5,4.61928525 4.61930254,3.5 5.99995331,3.5 C7.38069746,3.5 8.5,4.61928525 8.5,6 C8.5,7.38071475 7.38069746,8.5 5.99995331,8.5 C4.61930254,8.5 3.5,7.38071475 3.5,6 L3.5,6 Z"></path></g></svg></div>
-
-				<li>
-					<center><button class="boton">+ SUSCRIBIRSE</button></center>
-				</li>
 				<li id="start4" onclick="reload('hijoo');arreglo('start4','first4','start','first','mod','first3','start2','first2');" >
 					<a href="#" class="si" >
 						<span id="first4">
-							<svg class="svg-icon icon3 svg-icon-love" viewBox="0 0 12 12" aria-hidden="true" height="16" width="16"><g><path d="M6.00011325,2.5 C6.00011325,2.5 5.00009438,1 3.25,1 C1.66669813,1 1.65327318e-16,2.25 0,4.5 C1.65327318e-16,7.5 6,11.5 6,11.5 C6,11.5 11.9999997,7.5 12,4.5 C12.0000002,2.25 10.3335284,1 8.75,1 C7.00013213,1 6.00011325,2.5 6.00011325,2.5 Z"></path></g></svg> <span style="margin-left: -4px;" >Canciones favoritas</span></span >  
+							<svg class="svg-icon icon3 svg-icon-love" viewBox="0 0 12 12" aria-hidden="true" height="16" width="16"><g><path d="M6.00011325,2.5 C6.00011325,2.5 5.00009438,1 3.25,1 C1.66669813,1 1.65327318e-16,2.25 0,4.5 C1.65327318e-16,7.5 6,11.5 6,11.5 C6,11.5 11.9999997,7.5 12,4.5 C12.0000002,2.25 10.3335284,1 8.75,1 C7.00013213,1 6.00011325,2.5 6.00011325,2.5 Z"></path></g></svg> <span style="margin-left: -4px;" >Mis Favoritas</span></span >  
 						</a>
 
 					</li>
@@ -385,10 +381,7 @@ function cortar3($text){
 
 
 									<li  id="li8" onclick="li('li8');ver('hijo4','hijo2','hijo3','hijo','hijo5','hijo6');">
-										<a href="#"  class="si">
-											<span>
-												<svg class="svg-icon icon3 svg-icon-time" viewBox="0 0 12 12" aria-hidden="true" height="16" width="16"><g><path d="M11,6 C11,3.23857625 8.76142375,1 6,1 C3.23857625,1 1,3.23857625 1,6 C1,8.76142375 3.23857625,11 6,11 C8.76142375,11 11,8.76142375 11,6 Z M7,6.50952148 L7,3.49047852 C7,3.21505737 6.77614237,3 6.5,3 C6.23193359,3 6,3.21959471 6,3.49047852 L6,6 L4.49538898,6 C4.2157526,6 4,6.22385763 4,6.5 C4,6.76806641 4.2217932,7 4.49538898,7 L6.50461102,7 C6.64282453,7 6.76543159,6.94531282 6.85409473,6.85665508 C6.94267961,6.76617647 7,6.64418681 7,6.50952148 Z" fill-rule="evenodd"></path></g></svg></span>Actividades
-											</a>
+		
 
 										</li>
 										<div class="hijo4" id="hijo4">
@@ -452,10 +445,6 @@ function cortar3($text){
 
 
 											<li  id="li9" onclick="li('li9');ver('hijo5','hijo2','hijo3','hijo4','hijo','hijo6')">
-												<a href="#" class="si">
-													<span>
-														<svg class="svg-icon icon3 svg-icon-app" viewBox="0 0 12 12" aria-hidden="true" height="16" width="16"><g><path d="M0.375518305,6.90836424 C-0.126157409,6.40668852 -0.124187159,5.59134123 0.375518305,5.09163576 L5.09163576,0.375518305 C5.59331148,-0.126157409 6.40865877,-0.124187159 6.90836424,0.375518305 L11.6244817,5.09163576 C12.1261574,5.59331148 12.1241872,6.40865877 11.6244817,6.90836424 L6.90836424,11.6244817 C6.40668852,12.1261574 5.59134123,12.1241872 5.09163576,11.6244817 L0.375518305,6.90836424 L0.375518305,6.90836424 Z M8.56634425,6.00000601 L4.9734623,3.9469246 L4.9734623,8.0530754 L8.56634425,6.00000601 L8.56634425,6.00000601 Z"></path></g></svg></span>Aplicaciones
-													</a> 
 
 												</li>
 												<div class="hijo5" id="hijo5">
@@ -500,18 +489,18 @@ function cortar3($text){
 												</ul>			
 												<div id="jp_container_1"  class="jp-video jp-video-270p" role="application" aria-label="media player">
 								<div class="jp-type-playlist" >
-									<span style="position: absolute;" id="detalles">
+								<span style="position: absolute;" id="detalles">
 										<p class="nombresong"><a href="#" id="nombresong"></a></p>
-										<p class="nombreartista" style="margin-top: -5px"><a href="#" id="nombreartista"></a></p>
+										<div><p class="nombreartista" style="margin-top: -5px;"><a href="#" id="nombreartista"></a></p></div>
 									</span>	
 									
-									<div id="jquery_jplayer_1" class="jp-jplayer" style="background:#F0F0F0; width:100px height:60px;">
+									<div id="jquery_jplayer_1" class="jp-jplayer" style="background:#F0F0F0; width:100px height:60px; display:none;">
 
 									</div>
 									<div class="jp-gui">
 															
 									<div class="jp-interface">	
-											
+									<button id="btn-esperar" style="position:absolute; left:1180px; top:25px; font-size:10px;"><img  src="img-slider/28x28-000000-80-0-0.jpg" alt="" crossorigin="anonymous" height="28" width="28" style="border-radius:10%; margin-right:2px;">Lista de espera</button>
 											<div class="jp-progress">
 												<div class="jp-seek-bar">
 													<div class="jp-play-bar">
@@ -519,7 +508,6 @@ function cortar3($text){
 													</div>
 												</div>
 											</div>
-						
 										<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
 										<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
 											<div class="jp-controls-holder">
@@ -542,6 +530,7 @@ function cortar3($text){
 																					<div id="chek">
 																						<input type="checkbox" name="chk3" id="chk3"><label for="chk3"><p >Recomendaciones automaticas</p> </label>
 																					</div>
+																					
 																		</div>
 																	</div>
 																</div>
@@ -563,6 +552,8 @@ function cortar3($text){
 													<a href="#" id="repetir" title="Repetir todas las canciones de la lista"><span class=" jp-repeat glyphicon glyphicon-refresh"  aria-hidden="true"></span></a>
 													<a href="#" id="ran" title="Activar modo aleatorio"><span class=" jp-shuffle glyphicon glyphicon-random" aria-hidden="true"></span></a>
 													<a href="#" id="cola" title="Lista de espera"><span class="glyphicon glyphicon-list-alt" id="iconos" >
+
+									
 										</div>
 										<div class="jp-volume-controls" style="position:absolute; left: 724px; padding-top: 588px; color: #32323D;">			
 													<a href="#" title="Silencio"><span class="jp-mute glyphicon glyphicon-volume-off" id="iconos" aria-hidden="true"></span></a>
@@ -572,29 +563,18 @@ function cortar3($text){
 														</div>
 													</div>
 													<a href="#" class="ocultoo" id="volplus"><span class="jp-volume-max glyphicon glyphicon-volume-up " id="iconos" aria-hidden="true"></span></a>
+
 										</div>
+										
 									</div>
+
 									<!--div class="jp-no-solution">
 									<span>Update Required</span>
 									To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
 									</div-->
 								</div>
 							</div>
-						</div>
-
-
-
-
-
-
-						
-							
-												
-
-
-
-							<div id="drop">
-								
+						</div>		
 							</div>
 							<!--div id="cover">
 

@@ -76,329 +76,317 @@ function cortar($text){
     padding: 0;
     overflow-x: hidden; 
   }
-  .thumbnail .action-item-btn {
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: rgba(0,0,0,.75);
-    -webkit-box-shadow: 0 3px 2px 0 rgba(0,0,0,.21);
-    box-shadow: 0 3px 2px 0 rgba(0,0,0,.21);
-    border-radius: 50%;
-    color: #fff;
-    cursor: pointer;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 12px;
-    height: 36px;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    line-height: 36px;
-    opacity: 0;
-    position: relative;
-    text-align: center;
-    width: 36px;
-    -webkit-transition-duration: .15s;
-    transition-duration: .15s;
-    -webkit-transition-property: opacity,-webkit-transform;
-    transition-property: opacity,-webkit-transform;
-    transition-property: opacity,transform;
-    transition-property: opacity,transform,-webkit-transform;
-}
-button, input[type=button], input[type=checkbox], input[type=radio], input[type=reset], input[type=submit], label {
-    cursor: pointer;
-}
-button, html input[type=button], input[type=reset], input[type=submit] {
-    -webkit-appearance: button;
-    cursor: pointer;
-}
-button, input {
-    line-height: normal;
-}
-button, input, select, textarea {
-    font: inherit;
-    margin: 0;
-    outline: 0;
-    vertical-align: middle;
-}
-button {
-    background: rgba(0,0,0,0);
-    border: 0;
-    color: currentColor;
-    overflow: visible;
-    padding: 0;
-}
-button, select {
-    text-transform: none;
-}
-button, input {
-    overflow: visible;
-}
-button, input, optgroup, select, textarea {
-    font: inherit;
-    margin: 0;
-}
-button {
-    background-color: rgba(0,0,0,0);
-    border-radius: 0;
-    color: inherit;
-    cursor: pointer;
-    line-height: normal;
-    margin: 0;
-    outline: none;
-    text-decoration: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-appearance: button;
-    -webkit-tap-highlight-color: transparent;
-}
-*, :after, :before {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-user agent stylesheet
-button {
-    padding: 1px 6px;
-}
-user agent stylesheet
-button {
-    align-items: flex-start;
-    text-align: center;
-    cursor: default;
-    color: buttontext;
-    background-color: buttonface;
-    box-sizing: border-box;
-    padding: 2px 6px 3px;
-    border-width: 2px;
-    border-style: outset;
-    border-color: buttonface;
-    border-image: initial;
-}
-user agent stylesheet
-button {
-    text-rendering: auto;
-    color: initial;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: start;
-    margin: 0em;
-    font: 400 13.3333px Arial;
-}
-user agent stylesheet
-button {
-    -webkit-writing-mode: horizontal-tb !important;
-}
-user agent stylesheet
-button {
-    -webkit-appearance: button;
-}
-dd, dl, dt, li, ol, ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-user agent stylesheet
-li {
-    text-align: -webkit-match-parent;
-}
-.thumbnail .action {
-    bottom: 16px;
-    left: 15px;
-    line-height: 1;
-    position: absolute;
-    white-space: nowrap;
-    z-index: 4;
-    -webkit-transition-duration: .15s;
-    transition-duration: .15s;
-    -webkit-transition-property: opacity;
-    transition-property: opacity;
-}
-ol, ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-user agent stylesheet
-ul ul {
-    list-style-type: circle;
-}
-user agent stylesheet
-ul {
-    list-style-type: disc;
-}
-user agent stylesheet
-li {
-    text-align: -webkit-match-parent;
-}
-user agent stylesheet
-ul {
-    list-style-type: disc;
-}
-.dir-ltr {
-    direction: ltr;
-}
-body {
-    background-color: #fff;
-    color: #72727d;
-    font-family: Open Sans,Arial,sans-serif;
-    font-size: 12px;
-    line-height: 1.33333333;
-    margin: 0;
-    padding: 0;
-}
-body {
-    font-family: inherit;
-}
-html {
-    font-size: 100%;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-html {
-    font-family: Open Sans,Arial,sans-serif;
-}
-user agent stylesheet
-html {
-    color: -internal-root-color;
-}
-*, :after, :before {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-*, :after, :before {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
+    .thumbnail .action-item-btn {
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      background-color: rgba(0,0,0,.75);
+      -webkit-box-shadow: 0 3px 2px 0 rgba(0,0,0,.21);
+      box-shadow: 0 3px 2px 0 rgba(0,0,0,.21);
+      border-radius: 50%;
+      color: #fff;
+      cursor: pointer;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      font-size: 12px;
+      height: 36px;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      line-height: 36px;
+      opacity: 0;
+      position: relative;
+      text-align: center;
+      width: 36px;
+      -webkit-transition-duration: .15s;
+      transition-duration: .15s;
+      -webkit-transition-property: opacity,-webkit-transform;
+      transition-property: opacity,-webkit-transform;
+      transition-property: opacity,transform;
+      transition-property: opacity,transform,-webkit-transform;
+  }
+  button, input[type=button], input[type=checkbox], input[type=radio], input[type=reset], input[type=submit], label {
+      cursor: pointer;
+  }
+  button, html input[type=button], input[type=reset], input[type=submit] {
+      -webkit-appearance: button;
+      cursor: pointer;
+  }
+  button, input {
+      line-height: normal;
+  }
+  button, input, select, textarea {
+      font: inherit;
+      margin: 0;
+      outline: 0;
+      vertical-align: middle;
+  }
+  button {
+      background: rgba(0,0,0,0);
+      border: 0;
+      color: currentColor;
+      overflow: visible;
+      padding: 0;
+  }
+  button, select {
+      text-transform: none;
+  }
+  button, input {
+      overflow: visible;
+  }
+  button, input, optgroup, select, textarea {
+      font: inherit;
+      margin: 0;
+  }
+  button {
+      background-color: rgba(0,0,0,0);
+      border-radius: 0;
+      color: inherit;
+      cursor: pointer;
+      line-height: normal;
+      margin: 0;
+      outline: none;
+      text-decoration: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-appearance: button;
+      -webkit-tap-highlight-color: transparent;
+  }
+  *, :after, :before {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+  }
+  user agent stylesheet
+  button {
+      padding: 1px 6px;
+  }
+  user agent stylesheet
+  button {
+      align-items: flex-start;
+      text-align: center;
+      cursor: default;
+      color: buttontext;
+      background-color: buttonface;
+      box-sizing: border-box;
+      padding: 2px 6px 3px;
+      border-width: 2px;
+      border-style: outset;
+      border-color: buttonface;
+      border-image: initial;
+  }
+  user agent stylesheet
+  button {
+      text-rendering: auto;
+      color: initial;
+      letter-spacing: normal;
+      word-spacing: normal;
+      text-transform: none;
+      text-indent: 0px;
+      text-shadow: none;
+      display: inline-block;
+      text-align: start;
+      margin: 0em;
+      font: 400 13.3333px Arial;
+  }
+  user agent stylesheet
+  button {
+      -webkit-writing-mode: horizontal-tb !important;
+  }
+  user agent stylesheet
+  button {
+      -webkit-appearance: button;
+  }
+  dd, dl, dt, li, ol, ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+  user agent stylesheet
+  li {
+      text-align: -webkit-match-parent;
+  }
+  .thumbnail .action {
+      bottom: 16px;
+      left: 15px;
+      line-height: 1;
+      position: absolute;
+      white-space: nowrap;
+      z-index: 4;
+      -webkit-transition-duration: .15s;
+      transition-duration: .15s;
+      -webkit-transition-property: opacity;
+      transition-property: opacity;
+  }
+  ol, ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+  user agent stylesheet
+  ul ul {
+      list-style-type: circle;
+  }
+  user agent stylesheet
+  ul {
+      list-style-type: disc;
+  }
+  user agent stylesheet
+  li {
+      text-align: -webkit-match-parent;
+  }
+  user agent stylesheet
+  ul {
+      list-style-type: disc;
+  }
+  .dir-ltr {
+      direction: ltr;
+  }
+  body {
+      background-color: #fff;
+      color: #72727d;
+      font-family: Open Sans,Arial,sans-serif;
+      font-size: 12px;
+      line-height: 1.33333333;
+      margin: 0;
+      padding: 0;
+  }
+  body {
+      font-family: inherit;
+  }
+  html {
+      font-size: 100%;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+  }
+  html {
+      font-family: Open Sans,Arial,sans-serif;
+  }
+  user agent stylesheet
+  html {
+      color: -internal-root-color;
+  }
+  *, :after, :before {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+  }
+  *, :after, :before {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+  }
 
 
 
-.carousel-controls {
-    position: absolute;
-    right: 0;
-    top: 20%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-*, :after, :before {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-user agent stylesheet
-div {
-    display: block;
-}
-.dir-ltr {
-    direction: ltr;
-}
-body {
-    background-color: #fff;
-    color: #72727d;
-    font-family: Open Sans,Arial,sans-serif;
-    font-size: 12px;
-    line-height: 1.33333333;
-    margin: 0;
-    padding: 0;
-}
-body {
-    font-family: inherit;
-}
-html {
-    font-size: 100%;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-html {
-    font-family: Open Sans,Arial,sans-serif;
-}
-user agent stylesheet
-html {
-    color: -internal-root-color;
-}
-*, :after, :before {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-*, :after, :before {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
+  .carousel-controls {
+      position: absolute;
+      right: 0;
+      top: 20%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+  }
+  *, :after, :before {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+  }
+  user agent stylesheet
+  div {
+      display: block;
+  }
+  .dir-ltr {
+      direction: ltr;
+  }
+  body {
+      background-color: #fff;
+      color: #72727d;
+      font-family: Open Sans,Arial,sans-serif;
+      font-size: 12px;
+      line-height: 1.33333333;
+      margin: 0;
+      padding: 0;
+  }
+  body {
+      font-family: inherit;
+  }
+  html {
+      font-size: 100%;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+  }
+  html {
+      font-family: Open Sans,Arial,sans-serif;
+  }
+  user agent stylesheet
+  html {
+      color: -internal-root-color;
+  }
+  *, :after, :before {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+  }
+  *, :after, :before {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+  }
 
-:after, :before {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-user agent stylesheet
-div {
-    display: block;
-}
-dd, dl, dt, li, ol, ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-user agent stylesheet
-li {
-    text-align: -webkit-match-parent;
-}
-.thumbnail .action {
-    bottom: 16px;
-    left: 15px;
-    line-height: 1;
-    position: absolute;
-    white-space: nowrap;
-    z-index: 4;
-    -webkit-transition-duration: .15s;
-    transition-duration: .15s;
-    -webkit-transition-property: opacity;
-    transition-property: opacity;
-}
-ol, ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-user agent stylesheet
-ul ul {
-    list-style-type: circle;
-}
-user agent stylesheet
-ul {
-    list-style-type: disc;
-}
-user agent stylesheet
-li {
-    text-align: -webkit-match-parent;
-}
-user agent stylesheet
-ul {
-    list-style-type: disc;
-}
-.dir-ltr {
-    direction: ltr;
-}
-body {
-    background-color: #fff;
-    color: #72727d;
-    font-family: Open Sans,Arial,sans-serif;
-    font-size: 12px;
-    line-height: 1.33333333;
-    margin: 0;
-    padding: 0;
-}
-body {
-    font-family: inherit;
-}
-#mod:hover{
-  color:black;
-}
+  :after, :before {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+  }
+
+  div {
+      display: block;
+  }
+  dd, dl, dt, li, ol, ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  li {
+      text-align: -webkit-match-parent;
+  }
+  .thumbnail .action {
+      bottom: 16px;
+      left: 15px;
+      line-height: 1;
+      position: absolute;
+      white-space: nowrap;
+      z-index: 4;
+      -webkit-transition-duration: .15s;
+      transition-duration: .15s;
+      -webkit-transition-property: opacity;
+      transition-property: opacity;
+  }
+  ol, ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  ul ul {
+      list-style-type: circle;
+  }
+
+  ul {
+      list-style-type: disc;
+  }
+
+  li {
+      text-align: -webkit-match-parent;
+  }
+
+  ul {
+      list-style-type: disc;
+  }
+  .dir-ltr {
+      direction: ltr;
+  }
+  
+
+  
   </style>
 </head>
 <body>
@@ -407,6 +395,16 @@ body {
 
 
     <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+       <div style="margin: 20px 54px 20px;"><a id="mod" href="#" style="text-decoration:none;"><h4 style="font-size:22px; font-family:calibri; color:black;">Explorar
+          <span class="glyphicon glyphicon-menu-right" style="width:25px; top:2px;"></span></a>
+        </h4><br>
+        <p style="font-size:17px; font-family:calibri;">Explora por Genero Y Momento</p></div>
+        <div class="container"><div class="carousel-wrapper"><div class="carousel-inner" style="transform: translateX(0px);"><ul class="thumbnail-grid thumbnail-grid-responsive thumbnail-grid-one-line"><li class="thumbnail-col"><a class="thumbnail thumbnail-rectangle thumbnail-channel" href="/es/channels/latin" style="background-color: rgb(255, 107, 0); "><img class="picture-img image-loader is-loaded" src="https://e-cdns-images.dzcdn.net/images/misc/99c707f42e754c25aebddf8fef79499d/134x264-000000-80-0-0.jpg" alt="" crossorigin="anonymous" height="134" style="" width="264"><div class="title"><p class="title-text" id="ariaThumbnailTitle48">Música latina</p></div></a></li><li class="thumbnail-col"><a class="thumbnail thumbnail-rectangle thumbnail-channel" href="/es/channels/pop" style="background-color: rgb(249, 59, 65);"><div class="picture overlay-hidden" aria-labelledby="ariaThumbnailTitle49"><img class="picture-img image-loader is-loaded" src="https://e-cdns-images.dzcdn.net/images/misc/6147a51f4df56d53b286dc3c9f02ae1f/134x264-000000-80-0-0.jpg" alt="" crossorigin="anonymous" height="134" width="264"></div><div class="title"><p class="title-text" id="ariaThumbnailTitle49">Pop</p></div></a></li><li class="thumbnail-col"><a class="thumbnail thumbnail-rectangle thumbnail-channel" href="/es/channels/mexican" style="background-color: rgb(206, 0, 7);"><div class="picture overlay-hidden" aria-labelledby="ariaThumbnailTitle50"><img class="picture-img image-loader is-loaded" src="https://e-cdns-images.dzcdn.net/images/misc/5e940164a7849e6240213c928d71081a/134x264-000000-80-0-0.jpg" alt="" crossorigin="anonymous" height="134" width="264"></div><div class="title"><p class="title-text" id="ariaThumbnailTitle50">Música mexicana</p></div></a></li><li class="thumbnail-col"><a class="thumbnail thumbnail-rectangle thumbnail-channel" href="/es/channels/reggaeton" style="background-color: rgb(255, 121, 97);"><div class="picture overlay-hidden" aria-labelledby="ariaThumbnailTitle51"><img class="picture-img image-loader is-loaded" src="https://e-cdns-images.dzcdn.net/images/misc/f7f1a49605d59281e75d8a0e9a69135b/134x264-000000-80-0-0.jpg" alt="" crossorigin="anonymous" height="134" width="264"></div><div class="title"><p class="title-text" id="ariaThumbnailTitle51">Reggaeton</p></div></a></li></div></a></li></ul></div></div></div><br><br></div>
+
+
+
+
+      <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
       <div style="margin: 20px 54px 20px;"><a id="mod" href="#" style="text-decoration:none;"><h4 style="font-size:22px; font-family:calibri; color:black;">Seleccion de Playlists
       <span class="glyphicon glyphicon-menu-right" style="width:25px; top:2px;"></span></a>
       </h4><br>
