@@ -79,8 +79,8 @@ input[type="checkbox"] + label h6{
 .cerrarsesion{
     
     padding: 7px 110px 7px 110px;
-    background-color: #d9534f;
-    border-color: #d43f3a;
+    background-color: #2692B7;
+    border-color: #2692B7;
     border: 1px solid transparent;
     border-radius: 4px;
     color: #fff;
@@ -94,7 +94,7 @@ input[type="checkbox"] + label h6{
 }
 
 .cerrarsesion:hover{
-  background-color: #bd2d2d;
+  background-color: #007FEB;
 }
  
 .col-lgj-10 {
