@@ -2,7 +2,7 @@
 session_start();
  //$_SESSION['codigo_usuario']=1; 
 if(!isset($_SESSION['codigo_usuario']))
-	header('Location:conectarse.php');
+	header('Location:Landing-Page/index2.php');
 
 include("class/class-conexion.php");
 $conexion = new Conexion();

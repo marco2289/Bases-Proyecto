@@ -1,7 +1,7 @@
 <?php
 session_start();
  if(!isset($_SESSION['codigo_usuario']))
- header('Location:http://localhost/IS501-DEEZER-V1.1/conectarse.php');
+ header('Location:conectarse.php');
 include("class/class-conexion.php");
 $conexion = new Conexion();
 $conexion->establecerConexion();
@@ -152,7 +152,7 @@ WHERE A.CODIGO_USUARIO=".$_SESSION["codigo_usuario"]."");
 								<select  class="form-control" id="mes" style="margin-left:6px;margin-bottom: 15px;width: 80px;">
 									<option value="N/A">N/A</option>
 								<?php
-                                  for ($i=1; $i <13 ; $i++) { 
+                       	           for ($i=1; $i <13 ; $i++) { 
                                   	if ($row['MES']==$i) {
                                   		echo "<option value=".$i." selected>".$i."</option>";
                                   	}else{

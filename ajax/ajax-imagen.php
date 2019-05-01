@@ -1,7 +1,7 @@
 <?php
 session_start(); 
 if(!isset($_SESSION['codigo_usuario']))
-  header('Location:http://localhost/IS501-DEEZER-V1.1/conectarse.php');
+  header('Location:conectarse.php');
 include("../class/class-conexion.php");
 $conexion = new Conexion();
 $conexion->establecerConexion();
@@ -51,7 +51,7 @@ if (isset($_FILES["file"]))
                                               FOTO='$src'
                                               WHERE CODIGO_USUARIO=".$_SESSION["codigo_usuario"]."");
 
-    move_uploaded_file($ruta_provisional, "C:/wamp64/www/IS501-DEEZER-V1.1/deezer/fotoperfiles/$nombre");
+    move_uploaded_file($ruta_provisional, "C:/wamp64/www/Bases-Proyecto/deezer/fotoperfiles/$nombre");
     $resultado['codigo']=1;
     $resultado["mensaje"]="<div class='bg-success'><center>Exito, Fotografia Actualizada</center></div>";
     $resultado["actualizar2"]='<img src="'.$src.'" width="150" height="150" style="border-radius: 4px">';
