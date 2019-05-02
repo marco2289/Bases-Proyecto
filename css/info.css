@@ -1,7 +1,7 @@
 
 #barrah{
 	height: 72px;
-	background-color:#23232d ;
+	background-color:#ffffff ;
 
 }
 
@@ -70,7 +70,7 @@ a{
 }
 
 a:visited{
-	color: white;
+	color:#0000;
 }
 
 a:link{
@@ -93,7 +93,7 @@ table td:hover{
     color: white;
     
     margin: 10px;
-    background-color: black;
+    background-color: white;
     margin-top: -20px;
     opacity: 1;
 }
@@ -107,7 +107,7 @@ ul li{
     border: 1px solid #BDC3C7;
     border-radius: 4px;
     margin: 10px;
-    background-color: black;
+    background-color: white;
     margin-top: -20px;
     opacity: 1;
 }
@@ -132,6 +132,7 @@ table td {
     position: relative;
     vertical-align: middle;
     padding: 3px 25px;
-    font-size: 12px;
+    font-size: 16px;
 }
+
 

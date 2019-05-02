@@ -179,9 +179,9 @@ function cortar3($text){
 						<li><a href="#">Fader</a></li>
 						<p class="titulo1">¿Qué es Deezer?</p>
 						<hr>
-						<li onclick="reload('hijo');window.open('deezerinfo.php?accion=1','_blank');"><a href="#">Planes de Suscripción<span class=" glyphicon glyphicon-chevron-right flecha"></span></a></li>
 						<li onclick="reload('hijo');window.open('deezerinfo.php?accion=2','_blank');"><a href="#">Quiénes somos<span class=" glyphicon glyphicon-chevron-right flecha"></span></a></li>
-						<li onclick="reload('hijo');window.open('deezerinfo.php?accion=3','_blank');"><a href="#">Ventajas<span class=" glyphicon glyphicon-chevron-right flecha"></span></a></li>
+						<li ><a href="#">Planes de Suscripción<span class=" glyphicon glyphicon-chevron-right flecha"></span></a></li>
+						<li ><a href="#">Ventajas<span class=" glyphicon glyphicon-chevron-right flecha"></span></a></li>
 						<li><a href="#">Trabajos<span class=" glyphicon glyphicon-chevron-right flecha"></span></a></li>
 						<hr>
 					</ul>
