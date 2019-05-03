@@ -21,24 +21,24 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" id="barrah">
-				<div id="imagen"> <a href="index.php"><img src="img/deezerr.png" id="fimage"></a></div>
+				<div id="imagen"> <a href="index.php"><img src="img/inicio/deezer.png" id="fimage"></a></div>
 				<div class="cell">
 					<table class="nav">
 						<tr>
 							<td  class="lineas" id="fun" >
-								<a  href="#"  id="q" onclick="borde('fun','dis','ofer','empr');ifra3(1);"
+								<a  href="#"  id="q" 
 								class="direc">FUNCIONALIDADES</a>
 							</td>
 							<td id="dis"   class="lineas">
-								<a href="#" id="qq" onclick="borde('dis','fun','ofer','empr');ifra3(2);" 
+								<a href="#" id="qq"
 								class="direc">DISPOSITIVOS</a>
 							</td>
 							<td id="ofer"   class="lineas">
-								<a href="#" id="qqq" onclick="borde('ofer','fun','dis','empr');ifra3(3);"
+								<a href="#" id="qqq" 
 							 	class="direc">OFERTAS</a>
 							</td>
 							<td id="empr"    class="lineas">
-								<a href="#" id="qqqq" onclick="borde('empr','fun','dis','ofer');ifra3(4);"
+								<a href="#" id="qqqq" 
 								class="direc">EMPRESA</a>
 								<ul id="lista">
 									<a href="javascript:;"><li><span>ACERCA DE</span> </li></a>

@@ -8,6 +8,7 @@
      <link rel="stylesheet" type="text/css" href="blogger/style.css">
      <link rel="stylesheet" href="fonts/style.css">
      <link rel="stylesheet" type="text/css" href="css/stlcomp.css">
+     <link href="css/login.css" rel="stylesheet">
      <link rel="stylesheet" type="text/css" href="fantastic/css/font-awesome.min.css">
      <style type="text/css"></style>
   </head>
@@ -114,137 +115,67 @@
   </div>
 </div>
 
-<div class="siguenos" style="margin-top: 0px">
-    <h2 class="sig">Síguenos</h2>
-    <div class="social">
-           <a class="soc" href="http://facebook.com/"><i class="fa fa-facebook fa-3x"></i></a>
-           <a class="soc" href="http://plus.google.com/"><i class="fa fa-google-plus fa-3x"></i></a>
-           <a class="soc" href="http://twitter.com/"><i class="fa fa-twitter fa-3x"></i></a>
-           <a class="soc" href="http://youtube.com/"><i class="fa fa-youtube fa-3x"></i> </a>
-           <a class="soc" href="http://instagram.com/"><i class="fa fa-instagram fa-3x"></i></a>
-           <a class="soc" href="http://www.deezer-blog.com/"><span id="parf1" class="icon-blogger"></span></a>
-           <a class="soc" href="http://linkedin.com/"><i class="fa fa-linkedin fa-3x"></i></a>
-           <a class="soc" href="http://jobteaser.com/"><i class="fa fa-bolt fa-3x"></i></a>
+<section class="footer" style=" padding: 200px 80px 200px 80px">
+      
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12" id="prub">
+      
+        <a href="#" style="color: #fff"><img id="foto2" src="img/inicio/deeze2.png" class="img-responsive" alt="" ></a>  <br><br>
+        <a href="#"> <img class="mb-4 rounded-circle" src="img/face.png" style=" width: 14%"></a>
+        <a href="#"> <img class="mb-4 rounded-circle" src="img/inicio/twi.png" style=" width: 14%">         </a>
+        <a href="#"><img class="mb-4 rounded-circle" src="img/inicio/you.png" style=" width: 14%">    </a>
+        <a href="#"><img class="mb-4 rounded-circle" src="img/inicio/inst.png" style=" width: 14%">    </a><br><br><br><br>
+        
+            
+                        
+        </div>      
+    </div>
+
+    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12" id="prub1" >
+      <ul class="list-group list-group-flush" id="lst1">
+        <li id = "lst1" class="list-group-item " style="color:mediumturquoise ">DEEZER</li>
+        <li id = "lst1"class="list-group-item "data-toggle="list">Ofertas</li>
+        <li id = "lst1"class="list-group-item">Ventajas</li>
+        <li id = "lst1"class="list-group-item">Explorador de canales</li>
+        <li id = "lst1"class="list-group-item">Dispositivos</li>
+        <li id = "lst1"class="list-group-item">Blogs</li>
+      </ul>
+    </div>
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12" id="prub2">
+          <ul id = "lst1"class="list-group list-group-flush">
+            <li id = "lst1"class="list-group-item"style="color:mediumturquoise ">¿QUIEN ERES?</li>
+            <li id = "lst1"class="list-group-item">Sellos y artistas</li>
+            <li id = "lst1"class="list-group-item">Desarrolladores</li>
+            <li id = "lst1"class="list-group-item">Prensa</li>
+          </ul>
+    
+      </div>
+      
+      <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12" id="prub3">
+        <ul class="list-group list-group-flush">
+          <li id = "lst1"class="list-group-item"style="color:mediumturquoise ">¿QUIENES SOMOS?</li>
+          <li id = "lst1"class="list-group-item">Quienes somos</li>
+          <li id = "lst1"class="list-group-item">Desarrolladores</li>
+          <li id = "lst1"class="list-group-item"></li>
+        </ul>
+    </div>
+     <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12" id="prub4">
+      <ul id = "lst"class="list-group list-group-flush">
+        <li id = "lst"class="list-group-item"style="color:mediumturquoise ">LEGAL</li>
+        <li id = "lst"class="list-group-item">Condiciones generales de uso</li>
+        <li id = "lst"class="list-group-item">Datos personales y cookies</li>
+        <li id = "lst"class="list-group-item">Contacto: privacy@deezer.com</li>
+        <li id = "lst"class="list-group-item">Aviso legal</li>
+        <li id = "lst"class="list-group-item">Ajustes de privacidad</li>
+      </ul>
+       
+      <p id="p1">© 2019 Deezer</p>
+        
         </div>
+  
   </div>
-
-  <div class="otrasopciones">
-       <div class="dezer">
-             <dl>
-             <dt><h3 class="pa"><span class="azul1">Deezer</span></h3></dt>
-             <dd><a href="javascript:;" style="text-decoration:none" class="der">Ofertas</a></dd>
-             <dd><a href="javascript:;" style="text-decoration:none" class="der">Ventajas</a></dd>
-             <dd><a href="javascript:;" style="text-decoration:none" class="der">Quiénes somos</a></dd>
-             <dd><a href="javascript:;" style="text-decoration:none" class="der">Prensa</a></dd>
-             <dd><a href="javascript:;" style="text-decoration:none" class="der">Ofertas de empleo Deezer</a></dd>
-           </dl>
-       </div>
-
-       <div class="extras">
-            <dl>
-             <dt><h3 class="pa"><span class="azul1">Extras</span></h3></dt>
-             <dd><a href="javascript:;" style="text-decoration:none" class="der">Developers </a></dd>
-             <dd><a href="javascript:;" style="text-decoration:none" class="der">Sellos y artistas </a></dd>
-           </dl>
-       </div>
-
-       <div class="dispositivo">
-             <dl>
-             <dt><h3 class="pa"><span class="azul1">Dispositivos</span></h3></dt>
-               <dd><a href="javascript:;" style="text-decoration:none" class="der">Android</a></dd>
-               <dd><a href="javascript:;" style="text-decoration:none" class="der">iPhone - Ipod Touch - iPad </a></dd>
-               <dd><a href="javascript:;" style="text-decoration:none" class="der">Windows Phone </a></dd>
-               <dd><a href="javascript:;" style="text-decoration:none" class="der">PC/Mac</a></dd>
-               <dd><a href="javascript:;" style="text-decoration:none" class="der">Tabletas</a></dd>
-               <dd><a href="javascript:;" style="text-decoration:none" class="der">TV</a></dd>
-               <dd><a href="javascript:;" style="text-decoration:none" class="der">Sistemas de audio</a></dd>
-               <dd><a href="javascript:;" style="text-decoration:none" class="der">Automóviles</a></dd>
-           </dl>
-       </div>
-
-       <div class="legal">
-             <dl>
-             <dt><h3 class="pa"><span class="azul1">Legal</span></h3></dt>
-              <dd><a href="javascript:;" style="text-decoration:none" class="der">Condiciones generales de uso</a></dd>
-              <dd><a href="javascript:;" style="text-decoration:none" class="der">Datos personales y cookies</a></dd>
-              <dd><a href="javascript:;" style="text-decoration:none" class="der">Aviso legal</a></dd>
-              </dl>
-       </div>  
-
-       <div class="separador"></div>
-
-       <div class="info">
-        <p class="per">Música a la carta con Deezer - Copyright 2006-2017 Your country is : HN · Generated by blm-web-40 · pop ny</p>
-        <select id="lenguajes">
-
-                                    <option value="en" >
-                English             </option>
-                                                <option value="us" >
-                English (us)              </option>
-                                                <option value="ar" >
-                العربیة             </option>
-                                                <option value="cs" >
-                Čeština             </option>
-                                                <option value="da" >
-                Dansk             </option>
-                                                <option value="de" >
-                Deutsch             </option>
-                                                <option value="es" selected="selected">
-                Español             </option>
-                                                <option value="mx" >
-                Español (mx)              </option>
-                                                <option value="fr" >
-                Français              </option>
-                                                <option value="id" >
-                Indonesia             </option>
-                                                <option value="it" >
-                Italiano              </option>
-                                                <option value="hu" >
-                Magyar              </option>
-                                                <option value="ms" >
-                Melayu              </option>
-                                                <option value="nl" >
-                Nederlands              </option>
-                                                <option value="no" >
-                Norsk             </option>
-                                                <option value="pl" >
-                Polski              </option>
-                                                <option value="br" >
-                Português (br)              </option>
-                                                <option value="pt" >
-                Português (pt)              </option>
-                                                <option value="ru" >
-                Pусский             </option>
-                                                <option value="ro" >
-                Română              </option>
-                                                <option value="rs" >
-                Srpski              </option>
-                                                <option value="fi" >
-                Suomi             </option>
-                                                <option value="se" >
-                Svenska             </option>
-                                                <option value="sq" >
-                Shqip             </option>
-                                                <option value="sk" >
-                Slovenčina              </option>
-                                                <option value="sl" >
-                Slovenščina             </option>
-                                                <option value="tr" >
-                Türkçe              </option>
-                                                <option value="me" >
-                Crnogorski              </option>
-                                                <option value="th" >
-                ภาษาไทย             </option>
-                                                <option value="cn" >
-                中文              </option>
-                                                <option value="hr" >
-                Hrvatski              </option>
-                                                <option value="ko" >
-                한국어             </option>
-                      
-        </select>
-       </div>  
-</div>
+  
+      
+</section>
 </body> 
     
 </html>
