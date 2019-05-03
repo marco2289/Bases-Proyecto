@@ -1,3 +1,4 @@
+/**/
 $(".playlist").hover(
                     function()
                     {

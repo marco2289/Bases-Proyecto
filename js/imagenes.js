@@ -1,4 +1,5 @@
- $(function(){
+//imagenes
+$(function(){
         $("input[name='file']").on("change", function(){
             var formData = new FormData($("#formulario")[0]);
 
