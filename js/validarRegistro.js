@@ -101,11 +101,11 @@ $("#btn-registro").click(function(){
         dataType:'json',
         success:function(respuesta){
           if (respuesta.codigo==0){
-               $("#resultado").html('<h5 style="border-radius: 4px;color: black;width: 300px;font-size: 18px;" class="bg-success"><center>'+ respuesta.mensaje+'</center></h5>');
+               console.log(respuesta.mensaje);
                window.location.href="index.php";
           }
           if (respuesta.codigo==1) {
-              $("#resultado").html('<h5 style="border-radius: 4px;color: black;width: 300px;font-size: 18px;" class="bg-danger"><center>'+ respuesta.mensaje+'</center></h5>');
+              console.log(respuesta.mensaje);
           }
           if (respuesta.codigo==2) {
              $("#resultado").html('<h5 style="border-radius: 4px;color: black;width: 300px;font-size: 18px;" class="bg-danger"><center>'+ respuesta.mensaje+'</center></h5>');
