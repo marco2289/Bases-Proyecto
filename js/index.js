@@ -1,4 +1,4 @@
-
+/*index*/
 
 function ifra(link){
     if (link==1)

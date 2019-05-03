@@ -1,4 +1,4 @@
-
+/*artisimi*/
 $(".art").hover(
                  	function()
                  	{

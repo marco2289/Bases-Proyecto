@@ -1,3 +1,4 @@
+/**/
 function borde(id){
  if (id=="mu") {
    $("#mu").addClass("borde-a");
