@@ -591,7 +591,7 @@ function cortar3($text){
 											<center>
 												<table  id="camara">
 													<tr>
-														<td id="col1"><img src="img/perfil.jpg" id="fotop"></td>
+														<td id="col1"><img src="img/Liga.jpg" id="fotop"></td>
 														<td>
 															<span id="pon">Para ponerle nombre,aqui:</span>
 															<input type="text" id="name-play" placeholder="Nombre de la playlist" class="form-control" >
