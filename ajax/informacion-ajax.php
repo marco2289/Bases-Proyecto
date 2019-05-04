@@ -69,7 +69,7 @@ if ($cont==0) {
   WHERE CODIGO_USUARIO=".$_SESSION['codigo_usuario']."");
 
  $resultado["codigo"]=1;
- $resultado["mensaje"]="Actualizacion exitosa";
+ $resultado["mensaje"]="Informacion Actualizada Exitosamente......!";
 }
 
 break;

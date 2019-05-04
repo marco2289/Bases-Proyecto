@@ -383,10 +383,10 @@
                 console.log(respuesta.mensaje);
             }
             if (respuesta.codigo==2) {
-                $("#resultado").html('<h5 style="border-radius: 4px;color: black;width: 300px;font-size: 18px;" class="bg-danger"><center>'+ respuesta.mensaje+'</center></h5>');
+                console.log(respuesta.mensaje);
             }
             if (respuesta.codigo==3) {
-        $("#resultado").html('<h5 style="border-radius: 4px;color: black;width: 300px;font-size: 18px;" class="bg-danger"><center>'+respuesta.mensaje+'</center></h5>');
+                console.log(respuesta.mensaje);
       }
     }
   });

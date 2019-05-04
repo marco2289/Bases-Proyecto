@@ -619,16 +619,16 @@ function cortar3($text){
 
 							<div class="modal fade" tabindex="-1" role="dialog" id="modal-password" aria-hidden="true">
 
-								<div class="modal-dialogg" role="document" style="width:900px" >
-									<div class="modal-content">
+								<div class="modal-dialogg" role="document" style="width:900px; " >
+									<div class="modal-content" style="background: url('img/des.jpg');">
 										<div class="modal-header">
 
 											<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 coll">
-												<center><h3>RENOVAR TU CONTRASEÑA DE DEEZER</h3></center>
+												<center><h3>Deseas Cambiar Tu Contrasña</h3></center>
 												<table class="pass">
 													<tr>
 														<td style="text-align: right;padding-bottom: 15px">
-															<label class="extras">Ingesar Contraseña:</label>
+															<label class="extras">Ingresar Contraseña Actual:</label>
 														</td>
 														<td style="padding-left: 15px;padding-bottom: 15px">
 															<input type="password" id="txt-password" placeholder="Contraseña" data-trigger="focus" class="form-control" data-toggle="popover" data-html="true" data-content="<h5 style='color:black'>-Usa [6-15] caracteres</h5>" data-placement="right" data-container="body">
@@ -636,7 +636,7 @@ function cortar3($text){
 													</tr>
 													<tr>
 														<td style="text-align: right;padding-bottom: 15px">
-															<label class="extras">Ingesar Nueva Contraseña:</label>
+															<label class="extras">Digite Su Nueva Contraseña:</label>
 														</td>
 														<td style="padding-left: 15px;padding-bottom: 15px">
 															<input type="password" id="txt-newpassword" placeholder="Nueva Contraseña" data-trigger="focus" class="form-control" data-toggle="popover" data-html="true" data-content="<h5 style='color:black'>-Usa [6-15] caracteres<br>-Asegurate de que las contraseñas coincidan</h5>" data-placement="right" data-container="body">
@@ -651,11 +651,11 @@ function cortar3($text){
 														</td>
 													</tr>
 													<tr>
-														<td colspan="2" style="padding-bottom: 10px""><div id="result"></div></td>
+														<td colspan="2" style="padding-bottom: 10px"><div id="result"></div></td>
 													</tr>
 													<tr>
 														<td colspan="2">
-															<button class="btn btn-success" id="changepass"  style="margin-left: 171px"><span class="laber">Continuar</span></button>
+															<button class="btn btn-info" id="changepass"  style="margin-left: 171px"><span class="laber">Continuar</span></button>
 															<button class="btn btn-danger" data-dismiss="modal" style="margin-left: 30px" ><span class="laber">Cancelar</span></button>
 														</td>
 													</tr>
@@ -672,7 +672,7 @@ function cortar3($text){
 
 							<div class="modal fade" tabindex="-1" role="dialog" id="imagen">
 								<div class="modal-dialog" role="document"  style="width:900px" style="height: 800px">
-									<div class="modal-content">
+									<div class="modal-content" style="background:url('img/des.jpg');">
 
 										<div class="modal-body">
 

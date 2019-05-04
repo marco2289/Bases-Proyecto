@@ -482,9 +482,9 @@ for (var i = 0; i < dato.length; i++) {
         dataType:'json',
         success:function(respuesta){
           if (respuesta.codigo==1){
-              $("#result").html('<div class="bg-success"><center>'+respuesta.mensaje+'</center></div>');
+              $("#result").html('<div style="background:#73DCF1;"><center><h4 style="color:white; weight:bold;">'+respuesta.mensaje+'</h4><span class="glyphicon glyphicon-ok"></span></center></div>');
           }else{
-             $("#result").html('<div class="bg-danger"><center>'+respuesta.mensaje+'</center></div>');
+             $("#result").html('<div style="background:#73DCF1;"><center><h4 style="color:white; weight:bold;">'+respuesta.mensaje+'</h4></span></center></div>');
           }
         }
      });

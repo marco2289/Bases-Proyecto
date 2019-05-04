@@ -53,7 +53,7 @@ if (isset($_FILES["file"]))
 
     move_uploaded_file($ruta_provisional, "C:/wamp64/www/Bases-Proyecto/deezer/fotoperfiles/$nombre");
     $resultado['codigo']=1;
-    $resultado["mensaje"]="<div class='bg-success'><center>Exito, Fotografia Actualizada</center></div>";
+    $resultado["mensaje"]="<div style='background:#73DCF1;'><center>Fotografia Actualizada Con Exito.......!</center><span class='glyphicon glyphicon-ok'></span></div>";
     $resultado["actualizar2"]='<img src="'.$src.'" width="150" height="150" style="border-radius: 4px">';
     $resultado["actualizar"]='<img src="'.$src.'" width="24" height="24" style="border-radius: 50%;margin-right: 5px"> <span id="aayuda">Mi Musica</span>';    
     $resultado["actualizar3"]='<img src="'.$src.'" id="photo" width="160" height="160">';
