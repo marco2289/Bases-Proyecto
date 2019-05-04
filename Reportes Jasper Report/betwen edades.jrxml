@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report5" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="48966fa7-fcbe-4b4c-847e-677dbd3361f8">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select  edad, count (*) as Personas
+from tbl_usuarios where edad BETWEEN 12 and 25
+group by edad]]>
+	</queryString>
+	<field name="EDAD" class="java.math.BigDecimal"/>
+	<field name="PERSONAS" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="17" y="0" width="538" height="61" uuid="ccb715b6-6343-4fd7-bcf8-2812cffa1f1d"/>
+				<textElement>
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[Reporte cantidad de personas registradas que se encuentra entre 20 y 25 años]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="2" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<staticText>
+				<reportElement x="153" y="16" width="100" height="20" uuid="bc659926-20e1-4cf9-aea6-106cb3a8ab9c"/>
+				<text><![CDATA[EDAD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="342" y="16" width="100" height="20" uuid="0ba4fc77-b8d6-4972-97e5-77d39c82830f"/>
+				<text><![CDATA[PERSONAS]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="28" splitType="Stretch">
+			<textField>
+				<reportElement x="153" y="0" width="100" height="20" uuid="6c1e4374-8deb-42ba-afd8-da2fc392e070"/>
+				<textFieldExpression><![CDATA[$F{EDAD}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="342" y="0" width="100" height="20" uuid="43ed2dce-1817-491a-9a97-7d80c2395b3b"/>
+				<textFieldExpression><![CDATA[$F{PERSONAS}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="32" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="29" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="108" splitType="Stretch">
+			<stackedBar3DChart>
+				<chart>
+					<reportElement x="178" y="0" width="200" height="100" uuid="fc21f245-ec54-4e93-b095-0e335dd0c82a"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA[$F{PERSONAS}]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{PERSONAS}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{EDAD}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<bar3DPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat/>
+					</valueAxisFormat>
+				</bar3DPlot>
+			</stackedBar3DChart>
+		</band>
+	</summary>
+</jasperReport>
