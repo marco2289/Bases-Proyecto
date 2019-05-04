@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C89A3F2C-423E-BC59-AB26-C09842D8B7E0" name="TBL_SEXOS">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:11:29 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<ordsAlias>table_44</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_SEXO" id="33ED9CE1-CCC5-E83E-7F34-BCE852B94A76">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:12:02 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEXO" id="4F0BC49D-A023-5567-46A2-5CCB9B4C3040">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:12:11 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TBL_PERSONA_CODIGO_PERSONA" id="8D3AFA61-89D9-A15C-3842-1F5B4032671E">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:12:25 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D928F56F-70CC-AA97-61BD-91BECCE15E1C" referredColumn="C243DD80-D300-F964-FE02-4C3256E00A86"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B6FCC39B-27EA-C62A-AEF5-ACF176B179B4" name="TBL_SEXOS_PK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:12:02 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="33ED9CE1-CCC5-E83E-7F34-BCE852B94A76"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="726E809E-EFB6-F5D9-8BDE-A18C0A116360" name="TBL_SEXOS_TBL_PERSONA_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:12:25 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D3AFA61-89D9-A15C-3842-1F5B4032671E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

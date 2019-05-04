@@ -8,16 +8,6 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="CODIGO_CANCION" id="7E694F42-EDDC-DF64-B9C2-4A53C4705421">
-<createdBy>Diana</createdBy>
-<createdTime>2019-03-11 00:27:55 UTC</createdTime>
-<ownerDesignName>modelo relacional</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="CODIGO_USUARIO" id="DFA699FE-7B64-D5BC-3534-C9EFAC2D3D45">
 <createdBy>Diana</createdBy>
 <createdTime>2019-03-11 00:28:00 UTC</createdTime>
@@ -32,6 +22,20 @@
 <colAssociation fkAssociation="8A205913-1968-B35A-B0F5-06ACBD3C67BF" referredColumn="547D1B11-BDA1-85DE-97DE-334B12AC3A7F"/>
 </associations>
 </Column>
+<Column name="TBL_CANCIONES_" id="8B80A5A8-ADA4-62A1-77AB-F457B50AC8BA">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:38:26 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="150F6D6D-B554-53BD-7E5D-C176E8A44F73" referredColumn="E8AE337C-FF7B-A943-12AA-3FBE4E4A8AB8"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="7679A69C-6DBC-6B52-6D8B-8D886D7C8CB6" name="TBL_FAVORITAS_PK">
@@ -43,7 +47,7 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="DFA699FE-7B64-D5BC-3534-C9EFAC2D3D45"/>
-<colUsage columnID="7E694F42-EDDC-DF64-B9C2-4A53C4705421"/>
+<colUsage columnID="8B80A5A8-ADA4-62A1-77AB-F457B50AC8BA"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="169765CD-1C90-25E3-744D-1DEDB1FF2104" name="TBL_FAVORITAS_TBL_USUARIO_FK">
@@ -54,6 +58,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="DFA699FE-7B64-D5BC-3534-C9EFAC2D3D45"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BA715C8E-CF88-03B2-5CF8-A0FC97E4FBE5" name="TBL_FAVORITAS_TBL_CANCIONES_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:38:26 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B80A5A8-ADA4-62A1-77AB-F457B50AC8BA"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

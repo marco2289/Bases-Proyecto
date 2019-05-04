@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="081CB817-FB50-D259-E452-D2450F5016B3" name="TBL_ANUNCIOS_X_USUARIO">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 20:10:51 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<ordsAlias>table_49</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_ANUNCIO" id="62DC993B-3471-7B74-E022-051EE4C1DEA4">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 20:12:25 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="92495444-6518-774B-9F91-1E1A3F763CC8" referredColumn="AB20F72D-ADD9-EA39-633B-B10F018866A9"/>
+</associations>
+</Column>
+<Column name="CODIGO_CUENTA" id="FEFA8A77-208D-6131-D806-53DE4F1CCB43">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 20:12:36 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3310A461-BB2C-3C54-7C79-EDCE4C556447" referredColumn="3A8A8F11-DB22-9025-FE4D-70363A677067"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B7BF8FF3-631D-AB97-A364-F3AB496E72EC" name="TBL_ANUNCIOS_X_USUARIO_TBL_ANUNCIOS_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 20:12:25 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62DC993B-3471-7B74-E022-051EE4C1DEA4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="860064B5-047C-EDCB-CB76-1BAAA4966E2D" name="TBL_ANUNCIOS_X_USUARIO_TBL_CUENTAS_GRATIS_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 20:12:36 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FEFA8A77-208D-6131-D806-53DE4F1CCB43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

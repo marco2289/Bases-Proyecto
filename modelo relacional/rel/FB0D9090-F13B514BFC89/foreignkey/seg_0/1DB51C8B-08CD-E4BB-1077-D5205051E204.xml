@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1DB51C8B-08CD-E4BB-1077-D5205051E204" containerWithKeyObject="B3028A3B-7E29-1221-6317-8CDF2E351B71" localFKIndex="D74EB5D4-33E3-3A60-CB3D-5F69EFB2E241" name="TBL_PROVEEDOR_TBL_TARJETAS_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 18:08:40 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<referredTableLongName>TBL_TARJETAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C2092247-8015-46EB-7A2B-A2810442A30C</referredTableID>
+<keyObject>FEAFE884-1551-EF58-B71A-69E8165085E2</keyObject>
+<referredKeyID>FEAFE884-1551-EF58-B71A-69E8165085E2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CODIGO_TARJETA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

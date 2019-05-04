@@ -73,6 +73,20 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="CODIGO_TIPO_PLAYLIST" id="105099B0-CF30-0473-1D00-60C17350F4B4">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 17:09:49 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B5CBE6D9-544F-06B1-E904-A70CBAE8672D" referredColumn="7CF9FEF2-D0BB-F131-0707-6F1F981F55C2"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="BB59140A-CF2C-A595-2679-DA70DB598FB9" name="TBL_PLAYLIST_PK">
@@ -84,6 +98,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="6663F438-5AFB-EA42-2978-F60B054AEB08"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DBF93763-1EF9-D198-D562-50360FF3C942" name="TBL_PLAYLIST_TBL_TIPO_PLAYLIST_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 17:09:49 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="105099B0-CF30-0473-1D00-60C17350F4B4"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

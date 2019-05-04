@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4B7C66BE-B531-7725-C936-11BCF50B79DF" name="TBL_CANCIONES_X_ALBUM">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 18:29:19 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<ordsAlias>table_37</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_CANCION" id="8EC0C035-8176-40AD-3AB0-08DFF8611A09">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 18:29:54 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A0739FBA-3C85-9255-7630-EA8AE770A0D6" referredColumn="E8AE337C-FF7B-A943-12AA-3FBE4E4A8AB8"/>
+</associations>
+</Column>
+<Column name="CODIGO_ALBUM" id="F7AE485B-BD16-809F-5799-DD332E4A6DD0">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 18:29:59 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="558D4D65-C850-59E7-A09F-8E6C20BAB9EE" referredColumn="E904ECCE-0CF0-6D05-0277-A38F1F4E6F6E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DD32B9D0-4D7F-BDD9-29C8-8258E480853B" name="TBL_CANCIONES_X_ALBUM_PK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 18:30:11 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8EC0C035-8176-40AD-3AB0-08DFF8611A09"/>
+<colUsage columnID="F7AE485B-BD16-809F-5799-DD332E4A6DD0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D688C6F3-7630-D89F-FCAB-87518E381D3E" name="TBL_CANCIONES_X_ALBUM_TBL_CANCIONES_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 18:29:54 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8EC0C035-8176-40AD-3AB0-08DFF8611A09"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="341E9BD6-F25D-1838-8136-B92292785681" name="TBL_CANCIONES_X_ALBUM_TBL_ALBUM_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 18:29:59 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F7AE485B-BD16-809F-5799-DD332E4A6DD0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3310A461-BB2C-3C54-7C79-EDCE4C556447" containerWithKeyObject="081CB817-FB50-D259-E452-D2450F5016B3" localFKIndex="860064B5-047C-EDCB-CB76-1BAAA4966E2D" name="TBL_ANUNCIOS_X_USUARIO_TBL_CUENTAS_GRATIS_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 20:12:36 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<referredTableLongName>TBL_CUENTAS_GRATIS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C5AA7E5F-F985-6A6A-C674-2C31D3751C2B</referredTableID>
+<keyObject>5C6B4449-9757-71E6-399F-0D93C6523E89</keyObject>
+<referredKeyID>5C6B4449-9757-71E6-399F-0D93C6523E89</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CODIGO_CUENTA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

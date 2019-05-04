@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EDE395DA-95EA-C2F0-3335-B1A89A8997FB" name="TBL_TIPO_PLAYLIST">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 17:08:39 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<ordsAlias>table_28</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_TIPO_PLAYLIST" id="7CF9FEF2-D0BB-F131-0707-6F1F981F55C2">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 17:09:13 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="15C2FFDF-BC59-ED90-58F3-4BD670892C64">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 17:09:22 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CD59D1D2-7B10-7C8B-B006-E4743637DD0E" name="TBL_TIPO_PLAYLIST_PK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 17:09:35 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7CF9FEF2-D0BB-F131-0707-6F1F981F55C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

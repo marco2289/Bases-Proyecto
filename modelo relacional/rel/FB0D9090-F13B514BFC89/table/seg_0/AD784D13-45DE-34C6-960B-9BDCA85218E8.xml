@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AD784D13-45DE-34C6-960B-9BDCA85218E8" name="TBL_COMENTARIOS_PLAYLIST">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:06:44 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<ordsAlias>table_43</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_PLAYLIST" id="6680F390-9DEE-591E-9514-ABC7D70C6640">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:07:24 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="36F2516B-F369-6BF0-212C-1FA333E51D57" referredColumn="6663F438-5AFB-EA42-2978-F60B054AEB08"/>
+</associations>
+</Column>
+<Column name="TBL_USUARIO_CODIGO_USUARIO" id="D2049509-351E-216C-7B49-B2490CB973CF">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:08:07 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B62003E9-4908-B1CC-4842-FA48402CB56A" referredColumn="547D1B11-BDA1-85DE-97DE-334B12AC3A7F"/>
+</associations>
+</Column>
+<Column name="CODIGO_COMENTARIO" id="5426E4AC-44C2-2E1C-B72D-6BA04CCDB10C">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:09:49 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B5872B95-4AF7-845F-95DD-5B7734C5C5FE" name="TBL_COMENTARIOS_PLAYLIST_PK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:09:49 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5426E4AC-44C2-2E1C-B72D-6BA04CCDB10C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="75D52B50-C807-5C01-122C-1F1414B62A4C" name="TBL_COMENTARIOS_PLAYLIST_TBL_PLAYLIST_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:07:24 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6680F390-9DEE-591E-9514-ABC7D70C6640"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8A4F4788-0336-295C-7348-D4CCDED2F6EC" name="TBL_COMENTARIOS_PLAYLIST_TBL_USUARIO_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:08:07 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D2049509-351E-216C-7B49-B2490CB973CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

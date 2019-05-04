@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7162FE03-5554-DF5B-E285-D308C95ACDC4" containerWithKeyObject="FF92A276-16F0-CE6D-0AB0-66C019429CC9" localFKIndex="5BE26586-87DA-B136-A61B-A10C12AC9D22" name="TBL_PLAYLIST_X_GENERO_TBL_GENEROS_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 17:50:53 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<referredTableLongName>TBL_GENEROS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>825093E6-84A1-52C6-BC4F-79CE1DABBF57</referredTableID>
+<keyObject>D3ADC042-1270-C2EB-C73C-9E49233788D6</keyObject>
+<referredKeyID>D3ADC042-1270-C2EB-C73C-9E49233788D6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CODIGO_GENERO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

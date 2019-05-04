@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="762DD21F-2D12-50F1-8E35-761934BED0E8" name="SEGUIDORES_X_ARTISTA">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:15:58 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<ordsAlias>table_45</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TBL_ARTISTA_CODIGO_ARTISTA" id="4244DA59-321A-4313-2964-DD7AE756ADF3">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:16:18 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5E68B32D-077C-EC59-00E6-C0C4C4C55FDD" referredColumn="44F3A5D6-964E-9D7D-00DB-187E056D04A9"/>
+</associations>
+</Column>
+<Column name="TBL_USUARIO_CODIGO_USUARIO" id="826412A8-1053-14BF-E94A-30A8ABCBDBEA">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:16:59 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B54DC093-11E8-0E9A-0581-BC59D9F5642B" referredColumn="547D1B11-BDA1-85DE-97DE-334B12AC3A7F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0E00DF35-6422-FA9D-8C64-70E3C257D840" name="SEGUIDORES_X_ARTISTA_TBL_ARTISTA_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:16:18 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4244DA59-321A-4313-2964-DD7AE756ADF3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="84218E99-6398-8E58-5BD7-D98662C8D86A" name="SEGUIDORES_X_ARTISTA_TBL_USUARIO_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:16:59 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="826412A8-1053-14BF-E94A-30A8ABCBDBEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

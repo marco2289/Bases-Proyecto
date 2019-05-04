@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A0509DC7-DB57-D2E5-B052-3CA23F60ADCC" name="TBL_SEGUIDORES_PLAYLIST">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:03:05 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<ordsAlias>table_41</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_PLAYLIST" id="BCCB6D3C-EF0E-0C4D-2C29-8FEB103128D9">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:05:05 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1F51994D-D6BC-8F3E-D8BC-70CD6B368CA1" referredColumn="6663F438-5AFB-EA42-2978-F60B054AEB08"/>
+</associations>
+</Column>
+<Column name="CODIGO_USUARIO" id="4A526629-93E0-5A80-45F3-23F1CC892F77">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:05:33 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="04EE83F5-5866-CE10-5732-D4480DF95032" referredColumn="547D1B11-BDA1-85DE-97DE-334B12AC3A7F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EDE1F585-DFAA-80CE-7E7B-27216E8F3C82" name="TBL_SEGUIDORES_PLAYLIST_PK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:05:14 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCCB6D3C-EF0E-0C4D-2C29-8FEB103128D9"/>
+<colUsage columnID="4A526629-93E0-5A80-45F3-23F1CC892F77"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B53CBB6C-8BD0-8292-EC75-507DB06DD319" name="TBL_SEGUIDORES_PLAYLIST_TBL_PLAYLIST_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:05:05 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCCB6D3C-EF0E-0C4D-2C29-8FEB103128D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="310F0AD9-FA90-9F36-46E8-457609C23B49" name="TBL_SEGUIDORES_PLAYLIST_TBL_USUARIO_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:05:33 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A526629-93E0-5A80-45F3-23F1CC892F77"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

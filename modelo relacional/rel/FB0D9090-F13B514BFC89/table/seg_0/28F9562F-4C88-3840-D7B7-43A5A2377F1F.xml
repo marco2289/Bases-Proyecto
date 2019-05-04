@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="28F9562F-4C88-3840-D7B7-43A5A2377F1F" name="TBL_COMENTARIOS_X_ARTISTA">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:22:54 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<ordsAlias>table_46</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_COMENTARIO" id="4238D39C-0E96-3668-78AC-5D14064A8319">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:23:31 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMENTARIO" id="A1E11347-3ADC-4EFC-673E-2000327334C5">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:23:44 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_COMENTARIO" id="511EFDA9-DD2C-E963-9FC6-2C49B5E48668">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:23:57 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TBL_ARTISTA_CODIGO_ARTISTA" id="9171D530-AD45-B036-9D3B-78E5BDBC0BF6">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:24:09 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="37C0FE7E-0765-6E4E-E175-9B17CB675171" referredColumn="44F3A5D6-964E-9D7D-00DB-187E056D04A9"/>
+</associations>
+</Column>
+<Column name="TBL_USUARIO_CODIGO_USUARIO" id="451CEDD2-8FDB-9C53-3BB1-B148502C9C58">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:24:59 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2A3AFD25-DD26-3CB0-5A10-A0A7B68C5581" referredColumn="547D1B11-BDA1-85DE-97DE-334B12AC3A7F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="24AC16D4-266C-9D04-6B11-4D12598097A9" name="TBL_COMENTARIOS_X_ARTISTA_PK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:23:31 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4238D39C-0E96-3668-78AC-5D14064A8319"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D6DEDA16-BEAA-CF19-E511-76BB2A0AF2BA" name="TBL_COMENTARIOS_X_ARTISTA_TBL_ARTISTA_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:24:09 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9171D530-AD45-B036-9D3B-78E5BDBC0BF6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="32208C38-0F8E-5D43-CE13-3FBB2E24D95F" name="TBL_COMENTARIOS_X_ARTISTA_TBL_USUARIO_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 19:24:59 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="451CEDD2-8FDB-9C53-3BB1-B148502C9C58"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

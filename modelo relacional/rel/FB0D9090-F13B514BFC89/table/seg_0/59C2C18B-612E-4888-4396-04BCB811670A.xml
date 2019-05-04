@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="59C2C18B-612E-4888-4396-04BCB811670A" name="TBL_FORMA_DE_PAGO">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 18:00:19 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<ordsAlias>table_33</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_FORMA_DE_PAGO" id="4DBF5F1D-48FE-20C2-C787-16B2C0052741">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 18:01:06 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="FD2693EB-7A4F-7E21-F699-380F9B7CBBC9">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 18:01:20 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9376F0E6-6DB0-8578-4C20-1AC8144CF58E" name="TBL_FORMA_DE_PAGO_PK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 18:01:06 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4DBF5F1D-48FE-20C2-C787-16B2C0052741"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

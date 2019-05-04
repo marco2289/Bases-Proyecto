@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C1E3D97F-DFB4-2901-8678-E796E433D3F8" name="TBL_TIPO_LUGARES">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 16:55:16 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<ordsAlias>table_26</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_TIPO_LUGAR" id="C852908E-F076-6FE2-AB92-7131463D1BB2">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 16:55:55 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_TIPO_LUGAR" id="599450C4-26F5-8C6B-9C45-9D0C005B63ED">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 16:56:09 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AC5020C3-5942-F0ED-08CA-BD267F5920E6" name="TBL_TIPO_LUGARES_PK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 16:55:55 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C852908E-F076-6FE2-AB92-7131463D1BB2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

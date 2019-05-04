@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="63F81A3C-0AAD-8EBB-F42F-3B7F240B5E9E" containerWithKeyObject="C2092247-8015-46EB-7A2B-A2810442A30C" localFKIndex="47DB362A-DD60-1162-FAE2-6B19559D85AB" name="TBL_TARJETAS_TBL_ESTADO_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 18:16:38 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<referredTableLongName>TBL_ESTADO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F8F88BDA-8E34-FC48-3F44-28D5B183A1BE</referredTableID>
+<keyObject>9BF829E3-1FC2-E72F-6208-C9B053273BD0</keyObject>
+<referredKeyID>9BF829E3-1FC2-E72F-6208-C9B053273BD0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CODIGO_ESTADO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

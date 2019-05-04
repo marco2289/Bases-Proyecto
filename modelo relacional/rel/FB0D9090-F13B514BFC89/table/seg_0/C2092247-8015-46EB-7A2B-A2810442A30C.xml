@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C2092247-8015-46EB-7A2B-A2810442A30C" name="TBL_TARJETAS">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 18:03:44 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<ordsAlias>table_34</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_TARJETA" id="19673095-DD99-3AB1-E6C3-F01BBB7DB7AD">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 18:04:21 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO_TARJETA" id="E67C86AD-622A-370F-21AC-FE72166DC6B8">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 18:04:38 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMISOR" id="52A3AD94-981F-3F3A-2CE7-BE4209E6CFD8">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 18:04:49 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_VENCIMIENTO_TARJETA" id="99F81823-0E51-E822-2F98-7C37780C017F">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 18:06:57 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_SEGURIDAD" id="1471E1B1-FFA5-E564-3D15-C67E4A5BBECF">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 18:07:19 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_ESTADO" id="19A88B36-00FE-7F5A-326D-360B5AF0A872">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 18:16:38 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="63F81A3C-0AAD-8EBB-F42F-3B7F240B5E9E" referredColumn="3A3B925B-9C6B-0EA6-E2FB-76B088C6B299"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FEAFE884-1551-EF58-B71A-69E8165085E2" name="TBL_TARJETAS_PK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 18:04:21 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19673095-DD99-3AB1-E6C3-F01BBB7DB7AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="47DB362A-DD60-1162-FAE2-6B19559D85AB" name="TBL_TARJETAS_TBL_ESTADO_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 18:16:38 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19A88B36-00FE-7F5A-326D-360B5AF0A872"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

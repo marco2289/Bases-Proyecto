@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FF92A276-16F0-CE6D-0AB0-66C019429CC9" name="TBL_PLAYLIST_X_GENERO">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 17:50:08 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<ordsAlias>table_30</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_GENERO" id="510E0A4A-6534-C501-5332-32D3C15A1657">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 17:50:53 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7162FE03-5554-DF5B-E285-D308C95ACDC4" referredColumn="72F4E131-1A67-20C4-0759-5ABB933A506D"/>
+</associations>
+</Column>
+<Column name="CODIGO_PLAYLIST" id="A174B5B0-ADA4-C061-B7EA-E74E1368AF3A">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 17:51:28 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="404F7C8C-7D7D-F21B-0BDF-0FB582BE589A" referredColumn="6663F438-5AFB-EA42-2978-F60B054AEB08"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C1BCE529-DFC0-4385-968A-363F2B5DDBCE" name="TBL_PLAYLIST_X_GENERO_PK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 17:51:57 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="510E0A4A-6534-C501-5332-32D3C15A1657"/>
+<colUsage columnID="A174B5B0-ADA4-C061-B7EA-E74E1368AF3A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5BE26586-87DA-B136-A61B-A10C12AC9D22" name="TBL_PLAYLIST_X_GENERO_TBL_GENEROS_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 17:50:53 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="510E0A4A-6534-C501-5332-32D3C15A1657"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="096B48BC-94AA-4FE7-09D6-5D82A25DD562" name="TBL_PLAYLIST_X_GENERO_TBL_PLAYLIST_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 17:51:28 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A174B5B0-ADA4-C061-B7EA-E74E1368AF3A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

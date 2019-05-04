@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B5CBE6D9-544F-06B1-E904-A70CBAE8672D" containerWithKeyObject="D1997E54-DFB5-6ACF-274C-2F7E2C17280C" localFKIndex="DBF93763-1EF9-D198-D562-50360FF3C942" name="TBL_PLAYLIST_TBL_TIPO_PLAYLIST_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 17:09:49 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<referredTableLongName>TBL_TIPO_PLAYLIST</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EDE395DA-95EA-C2F0-3335-B1A89A8997FB</referredTableID>
+<keyObject>CD59D1D2-7B10-7C8B-B006-E4743637DD0E</keyObject>
+<referredKeyID>CD59D1D2-7B10-7C8B-B006-E4743637DD0E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CODIGO_TIPO_PLAYLIST</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

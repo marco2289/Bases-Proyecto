@@ -44,6 +44,20 @@
 <colAssociation fkAssociation="76BC2EAD-2AAC-D35B-5D82-8EA23C31A26C" referredColumn="728141F5-BC3A-0CF4-21A1-0F28F3924CE9"/>
 </associations>
 </Column>
+<Column name="CODIGO_TIPO_LUGAR" id="96E0F4B5-CB2D-3227-0EBF-933FC511D426">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 16:56:17 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BB608BB4-A555-CAC9-B051-E9A15F5E65C4" referredColumn="C852908E-F076-6FE2-AB92-7131463D1BB2"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="A2749CCC-5B1C-3481-A76B-9D6C29787760" name="TBL_LUGARES_PK">
@@ -65,6 +79,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="384173BF-9164-4030-737D-F1C3AF63B921"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6A82475F-3FB1-D588-DFDC-9618E867FB02" name="TBL_LUGARES_TBL_TIPO_LUGARES_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 16:56:17 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96E0F4B5-CB2D-3227-0EBF-933FC511D426"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

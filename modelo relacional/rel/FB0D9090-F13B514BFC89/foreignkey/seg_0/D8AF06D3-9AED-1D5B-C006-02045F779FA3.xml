@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D8AF06D3-9AED-1D5B-C006-02045F779FA3" containerWithKeyObject="51216113-395A-1880-ABFA-A35E7547E27B" localFKIndex="4D4341D8-1DB0-A2F4-5EFC-F1BD80E4C55F" name="TBL_EMPRESA_ANUNCIOS_TBL_ANUNCIOS_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 20:13:58 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<referredTableLongName>TBL_ANUNCIOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1D4637B4-6B12-3793-F6D5-53FE28532063</referredTableID>
+<keyObject>065BFC6C-D98F-F145-CD5D-0FD123A7C819</keyObject>
+<referredKeyID>065BFC6C-D98F-F145-CD5D-0FD123A7C819</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CODIGO_ANUNCIO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="51216113-395A-1880-ABFA-A35E7547E27B" name="TBL_EMPRESA_ANUNCIOS">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 20:13:10 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<ordsAlias>table_51</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_EMPRESA" id="4F252D6B-0196-818D-3DBD-13FC070DE783">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 20:13:34 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_EMPRESA" id="BEC2275E-906A-89CA-0876-A3697E0C091E">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 20:13:46 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_ANUNCIO" id="E94A3144-4980-A9A6-7B0D-3C1B1B9317D5">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 20:13:58 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D8AF06D3-9AED-1D5B-C006-02045F779FA3" referredColumn="AB20F72D-ADD9-EA39-633B-B10F018866A9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3DE76207-12B0-8078-BB28-37AB0E2358BC" name="TBL_EMPRESA_ANUNCIOS_PK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 20:13:34 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F252D6B-0196-818D-3DBD-13FC070DE783"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4D4341D8-1DB0-A2F4-5EFC-F1BD80E4C55F" name="TBL_EMPRESA_ANUNCIOS_TBL_ANUNCIOS_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 20:13:58 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E94A3144-4980-A9A6-7B0D-3C1B1B9317D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -18,11 +18,20 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="GENERO" id="F146BCA5-8725-9DE6-857B-83F57A0E9ABC">
+<Column name="NOMBRE_GENERO" id="F146BCA5-8725-9DE6-857B-83F57A0E9ABC">
 <createdBy>Diana</createdBy>
 <createdTime>2019-03-11 00:23:12 UTC</createdTime>
 <ownerDesignName>modelo relacional</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="979AB9A1-411F-687A-47A5-1EC6FA76934D">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 17:16:49 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>

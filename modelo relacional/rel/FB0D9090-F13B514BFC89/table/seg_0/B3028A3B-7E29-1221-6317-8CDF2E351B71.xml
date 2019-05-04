@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B3028A3B-7E29-1221-6317-8CDF2E351B71" name="TBL_PROVEEDOR">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 18:07:38 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<ordsAlias>table_35</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_PROVEEOR" id="9E62A010-7C59-9831-DC01-8E456B7032E0">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 18:08:09 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="4BB40521-2F52-95F2-2DFA-68608E29D182">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 18:08:19 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_TARJETA" id="C96F34B1-1F05-A551-1D34-DE25F6788158">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 18:08:40 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1DB51C8B-08CD-E4BB-1077-D5205051E204" referredColumn="19673095-DD99-3AB1-E6C3-F01BBB7DB7AD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C498FEC9-12BB-706C-63D6-4EA179687973" name="TBL_PROVEEDOR_PK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 18:08:09 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E62A010-7C59-9831-DC01-8E456B7032E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D74EB5D4-33E3-3A60-CB3D-5F69EFB2E241" name="TBL_PROVEEDOR_TBL_TARJETAS_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 18:08:40 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C96F34B1-1F05-A551-1D34-DE25F6788158"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
