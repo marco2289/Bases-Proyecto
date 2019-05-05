@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="66D75374-AB9E-59F5-571D-C40A809C96D0" name="TBL_MIEMBROS">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 20:29:21 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<ordsAlias>table_54</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_MIEMBRO" id="47DFB43D-3247-47D9-F447-2BE52A3FD330">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 20:29:50 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_ARTISTICO" id="2AF25F4C-5290-67E6-79EB-B05EAC0FF674">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 20:30:08 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_DEBUT" id="6ECF6259-0719-9853-2AC8-8FC0D957F7EC">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 20:30:29 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TBL_ARTISTA_CODIGO_ARTISTA" id="5FA3E25E-C980-286E-DC6F-32808CFD911A">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 20:31:12 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="96C99864-714F-8BC8-55B7-125F850B3897" referredColumn="44F3A5D6-964E-9D7D-00DB-187E056D04A9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="19A4C461-3F48-D489-A37B-E0C492D84EAC" name="TBL_MIEMBROS_PK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 20:29:50 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47DFB43D-3247-47D9-F447-2BE52A3FD330"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="192597D1-C588-3835-F9EA-837C39CA833F" name="TBL_MIEMBROS_TBL_ARTISTA_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 20:31:12 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5FA3E25E-C980-286E-DC6F-32808CFD911A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

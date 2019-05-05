@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5626A8E6-8D98-ECFA-542C-F5F6EE2975FA" name="TBL_RECOMENDACIONES">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 20:24:10 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<ordsAlias>table_53</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_RECOMENDACION" id="CB710B7F-ED15-7263-D588-5B85F0C6BC6E">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 20:24:31 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_RECOMENDACION" id="E375AEF7-F618-DC16-4D61-338A0DFF5ADE">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 20:24:46 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RECOMENDACION" id="49B2EDB8-D702-25FD-4CB0-3274B2C5DD67">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 20:24:58 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TBL_USUARIO_CODIGO_USUARIO" id="C514FB06-BDF8-536E-4033-6265DC935480">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 20:25:05 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9CF65DC5-E29E-0CB6-C113-6B5EC1D797A0" referredColumn="547D1B11-BDA1-85DE-97DE-334B12AC3A7F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A6AD3E2D-111B-6728-8CF1-E51F1AE9050A" name="TBL_RECOMENDACIONES_PK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 20:24:31 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB710B7F-ED15-7263-D588-5B85F0C6BC6E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AAE9F0BA-6C32-B612-4CBA-634A14B721BC" name="TBL_RECOMENDACIONES_TBL_USUARIO_FK">
+<createdBy>mm_19</createdBy>
+<createdTime>2019-05-04 20:25:05 UTC</createdTime>
+<ownerDesignName>modelo relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C514FB06-BDF8-536E-4033-6265DC935480"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
