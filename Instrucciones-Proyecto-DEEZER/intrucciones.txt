@@ -1,0 +1,16 @@
+Instrucciones para poner en marcha el proyecto
+
+todos los archivos mencionados aqui estan en la carpeta scripts
+
+1. Abrir una conexion con el usuario SYSTEM
+2. cargar el archivo  USER_DEEZER con el usuario system, esto crea el usuario
+3. crear una nueva conexion con el usuario DEEZER y contraseña oracle tal como esta en USER_DEEZER
+4. cargar DDL_DEEZER, este crea las tablas y vistas
+5. cargar el DML_DEEZER, este carga todos los registros y llena las tablas con informacion
+6. cargar PROCEDIMIENTOS_DEEZER, este carga los procedimiento para las funcionalidades del proyecto.
+7.puede usar el usuario marco@gmail.com y contraseña marco1 para ingresar por primera vez o puede crear su propia usuario
+8. Disfrutar DEEZER
+
+
+
+/*Bienaventurados aquellos que me copias, pues vosotros heredareis mis defectos */

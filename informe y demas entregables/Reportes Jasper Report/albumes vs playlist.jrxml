@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reporte 3 bases" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b548ea62-54e4-4410-8261-8756e0c45e21">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="87"/>
+	<queryString language="SQL">
+		<![CDATA[select a.nombre_album, count (*) as Playlist
+from tbl_albumes a
+inner join tbl_albumes_x_artistas b
+on (a.codigo_album = b.codigo_album)
+group by a.nombre_album]]>
+	</queryString>
+	<field name="NOMBRE_ALBUM" class="java.lang.String"/>
+	<field name="PLAYLIST" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="133" y="21" width="319" height="46" uuid="558a6c27-a0e1-474f-b88e-32b835074640"/>
+				<textElement>
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[Reporte Album VS Playlist]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<staticText>
+				<reportElement x="162" y="2" width="100" height="20" uuid="998b5112-b785-44bb-a161-3c72b970c93d"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[NOMBRE ALBUM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="328" y="2" width="100" height="20" uuid="6fb71578-36e8-4a3d-8ea0-1b9890ba4741"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[PLAYLIST]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="29" splitType="Stretch">
+			<textField>
+				<reportElement x="162" y="0" width="100" height="20" uuid="e56c4199-82aa-4d18-a784-ce01e64d440a"/>
+				<textFieldExpression><![CDATA[$F{NOMBRE_ALBUM}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="328" y="0" width="100" height="20" uuid="f9f5796f-d8e3-470d-8a71-5bbeca8a7356"/>
+				<textFieldExpression><![CDATA[$F{PLAYLIST}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="161" splitType="Stretch">
+			<pie3DChart>
+				<chart>
+					<reportElement x="162" y="0" width="266" height="161" uuid="333bfefb-f66a-4704-83bb-c023ce0fede5"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<pieDataset>
+					<keyExpression><![CDATA[$F{NOMBRE_ALBUM}]]></keyExpression>
+					<valueExpression><![CDATA[$F{PLAYLIST}]]></valueExpression>
+				</pieDataset>
+				<pie3DPlot>
+					<plot/>
+					<itemLabel/>
+				</pie3DPlot>
+			</pie3DChart>
+		</band>
+	</summary>
+</jasperReport>
